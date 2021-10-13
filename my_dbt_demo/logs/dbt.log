@@ -1,0 +1,1544 @@
+2021-09-22 15:07:50.720799 (MainThread): Running with dbt=0.20.1
+2021-09-22 15:07:50.736907 (MainThread): the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+2021-09-22 15:07:50.742005 (MainThread): ipaddress module is available
+2021-09-22 15:07:50.742051 (MainThread): ssl.match_hostname is available
+2021-09-22 15:07:50.795413 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/roberto.salcido/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-09-22 15:07:50.796677 (MainThread): Tracking: tracking
+2021-09-22 15:07:50.808130 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4d2b12d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4d2b91d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4d2ba7520>]}
+2021-09-22 15:07:50.819705 (MainThread): Partial parsing not enabled
+2021-09-22 15:07:50.834439 (MainThread): Parsing macros/adapters.sql
+2021-09-22 15:07:50.861758 (MainThread): Parsing macros/materializations/seed.sql
+2021-09-22 15:07:50.874173 (MainThread): Parsing macros/materializations/view.sql
+2021-09-22 15:07:50.874638 (MainThread): Parsing macros/materializations/table.sql
+2021-09-22 15:07:50.877290 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-09-22 15:07:50.900925 (MainThread): Parsing macros/materializations/incremental/validate.sql
+2021-09-22 15:07:50.905515 (MainThread): Parsing macros/materializations/incremental/strategies.sql
+2021-09-22 15:07:50.911241 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-09-22 15:07:50.915893 (MainThread): Parsing macros/core.sql
+2021-09-22 15:07:50.919147 (MainThread): Parsing macros/materializations/test.sql
+2021-09-22 15:07:50.925145 (MainThread): Parsing macros/materializations/helpers.sql
+2021-09-22 15:07:50.933494 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-09-22 15:07:50.934822 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-09-22 15:07:50.949182 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-09-22 15:07:50.977301 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-09-22 15:07:50.994784 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-09-22 15:07:50.996171 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-09-22 15:07:51.002360 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-09-22 15:07:51.014048 (MainThread): Parsing macros/materializations/table/table.sql
+2021-09-22 15:07:51.019781 (MainThread): Parsing macros/materializations/view/view.sql
+2021-09-22 15:07:51.024825 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-09-22 15:07:51.028631 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-09-22 15:07:51.029280 (MainThread): Parsing macros/etc/query.sql
+2021-09-22 15:07:51.030002 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-09-22 15:07:51.031159 (MainThread): Parsing macros/etc/datetime.sql
+2021-09-22 15:07:51.037993 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-09-22 15:07:51.039423 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-09-22 15:07:51.040616 (MainThread): Parsing macros/adapters/common.sql
+2021-09-22 15:07:51.079140 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-09-22 15:07:51.080487 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-09-22 15:07:51.081427 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-09-22 15:07:51.082427 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-09-22 15:07:51.251965 (MainThread): Acquiring new spark connection "model.my_new_project.my_first_dbt_model".
+2021-09-22 15:07:51.259282 (MainThread): Acquiring new spark connection "model.my_new_project.my_second_dbt_model".
+2021-09-22 15:07:51.296430 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '52b99d4a-8503-4f67-bc68-26997735d1eb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4d2cc26d0>]}
+2021-09-22 15:07:51.300156 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '52b99d4a-8503-4f67-bc68-26997735d1eb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4d2c068b0>]}
+2021-09-22 15:07:51.300323 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 169 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-09-22 15:07:51.300967 (MainThread): 
+2021-09-22 15:07:51.301166 (MainThread): Acquiring new spark connection "master".
+2021-09-22 15:07:51.301784 (ThreadPoolExecutor-0_0): Acquiring new spark connection "list_schemas".
+2021-09-22 15:07:51.308373 (ThreadPoolExecutor-0_0): Using spark connection "list_schemas".
+2021-09-22 15:07:51.308458 (ThreadPoolExecutor-0_0): On list_schemas: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "connection_name": "list_schemas"} */
+
+    show databases
+  
+2021-09-22 15:07:51.308528 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-09-22 15:07:52.267029 (ThreadPoolExecutor-0_0): SQL status: OK in 0.96 seconds
+2021-09-22 15:07:52.277093 (ThreadPoolExecutor-0_0): On list_schemas: Close
+2021-09-22 15:07:52.278641 (ThreadPoolExecutor-1_0): Acquiring new spark connection "list_None_robertodelta_dbt_test__audit".
+2021-09-22 15:07:52.352222 (ThreadPoolExecutor-1_0): NotImplemented: add_begin_query
+2021-09-22 15:07:52.352367 (ThreadPoolExecutor-1_0): Using spark connection "list_None_robertodelta_dbt_test__audit".
+2021-09-22 15:07:52.352454 (ThreadPoolExecutor-1_0): On list_None_robertodelta_dbt_test__audit: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "connection_name": "list_None_robertodelta_dbt_test__audit"} */
+show table extended in robertodelta_dbt_test__audit like '*'
+  
+2021-09-22 15:07:52.352541 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-09-22 15:07:52.701548 (ThreadPoolExecutor-1_0): Error while running:
+/* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "connection_name": "list_None_robertodelta_dbt_test__audit"} */
+show table extended in robertodelta_dbt_test__audit like '*'
+  
+2021-09-22 15:07:52.701687 (ThreadPoolExecutor-1_0): ('42000', "[42000] [Simba][Hardy] (80) Syntax or semantic analysis error thrown in server while executing query. Error message from server: org.apache.hive.service.cli.HiveSQLException: Error running query: org.apache.spark.sql.catalyst.analysis.NoSuchDatabaseException: Database 'robertodelta_dbt_test__audit' not found\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:998)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:698)\n\tat scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)\n\tat org.apache.spark.sql.hive.thriftserver.SparkOperation.withLocalProperties(SparkOperation.scala:158)\n\tat org.apache.spark.sql.hive.thriftserver.SparkOperation.withLocalProperties$(SparkOperation.scala:93)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:53)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:698)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:693)\n\tat java.security.AccessController.doPrivileged(Native Method)\n\tat javax.security.auth.Subject.doAs(Subject.java:422)\n\tat org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1746)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:709)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\nCaused by: org.apache.spark.sql.catalyst.analysis.NoSuchDatabaseException: Database 'robertodelta_dbt_test__audit' not found\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalogImpl.requireDbExists(SessionCatalog.scala:546)\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalogImpl.doListTables(SessionCatalog.scala:1379)\n\tat com.databricks.sql.managedcatalog.ManagedCatalogSessionCatalog.doListTables(ManagedCatalogSessionCatalog.scala:713)\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalog.listTables(SessionCatalog.scala:262)\n\tat org.apache.spark.sql.execution.command.ShowTablesCommand.$anonfun$run$45(tables.scala:914)\n\tat scala.Option.map(Option.scala:230)\n\tat org.apache.spark.sql.execution.command.ShowTablesCommand.run(tables.scala:914)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)\n\tat org.apache.spark.sql.Dataset.$anonfun$logicalPlan$1(Dataset.scala:233)\n\tat org.apache.spark.sql.Dataset.$anonfun$withAction$1(Dataset.scala:3815)\n\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$5(SQLExecution.scala:126)\n\tat org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:267)\n\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$1(SQLExecution.scala:104)\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:852)\n\tat org.apache.spark.sql.execution.SQLExecution$.withCustomExecutionEnv(SQLExecution.scala:77)\n\tat org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:217)\n\tat org.apache.spark.sql.Dataset.withAction(Dataset.scala:3813)\n\tat org.apache.spark.sql.Dataset.<init>(Dataset.scala:233)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$1(SparkExecuteStatementOperation.scala:840)\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:852)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.compileQuery(SparkExecuteStatementOperation.scala:822)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:877)\n\t... 16 more\n (80) (SQLExecDirectW)")
+2021-09-22 15:07:52.701890 (ThreadPoolExecutor-1_0): Error while running:
+macro list_relations_without_caching
+2021-09-22 15:07:52.701959 (ThreadPoolExecutor-1_0): Runtime Error
+  ('42000', "[42000] [Simba][Hardy] (80) Syntax or semantic analysis error thrown in server while executing query. Error message from server: org.apache.hive.service.cli.HiveSQLException: Error running query: org.apache.spark.sql.catalyst.analysis.NoSuchDatabaseException: Database 'robertodelta_dbt_test__audit' not found\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:998)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:698)\n\tat scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)\n\tat org.apache.spark.sql.hive.thriftserver.SparkOperation.withLocalProperties(SparkOperation.scala:158)\n\tat org.apache.spark.sql.hive.thriftserver.SparkOperation.withLocalProperties$(SparkOperation.scala:93)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:53)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:698)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:693)\n\tat java.security.AccessController.doPrivileged(Native Method)\n\tat javax.security.auth.Subject.doAs(Subject.java:422)\n\tat org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1746)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:709)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\nCaused by: org.apache.spark.sql.catalyst.analysis.NoSuchDatabaseException: Database 'robertodelta_dbt_test__audit' not found\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalogImpl.requireDbExists(SessionCatalog.scala:546)\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalogImpl.doListTables(SessionCatalog.scala:1379)\n\tat com.databricks.sql.managedcatalog.ManagedCatalogSessionCatalog.doListTables(ManagedCatalogSessionCatalog.scala:713)\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalog.listTables(SessionCatalog.scala:262)\n\tat org.apache.spark.sql.execution.command.ShowTablesCommand.$anonfun$run$45(tables.scala:914)\n\tat scala.Option.map(Option.scala:230)\n\tat org.apache.spark.sql.execution.command.ShowTablesCommand.run(tables.scala:914)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)\n\tat org.apache.spark.sql.Dataset.$anonfun$logicalPlan$1(Dataset.scala:233)\n\tat org.apache.spark.sql.Dataset.$anonfun$withAction$1(Dataset.scala:3815)\n\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$5(SQLExecution.scala:126)\n\tat org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:267)\n\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$1(SQLExecution.scala:104)\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:852)\n\tat org.apache.spark.sql.execution.SQLExecution$.withCustomExecutionEnv(SQLExecution.scala:77)\n\tat org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:217)\n\tat org.apache.spark.sql.Dataset.withAction(Dataset.scala:3813)\n\tat org.apache.spark.sql.Dataset.<init>(Dataset.scala:233)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$1(SparkExecuteStatementOperation.scala:840)\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:852)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.compileQuery(SparkExecuteStatementOperation.scala:822)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:877)\n\t... 16 more\n (80) (SQLExecDirectW)")
+2021-09-22 15:07:52.702129 (ThreadPoolExecutor-1_0): On list_None_robertodelta_dbt_test__audit: ROLLBACK
+2021-09-22 15:07:52.702198 (ThreadPoolExecutor-1_0): NotImplemented: rollback
+2021-09-22 15:07:52.702258 (ThreadPoolExecutor-1_0): On list_None_robertodelta_dbt_test__audit: Close
+2021-09-22 15:07:52.702631 (ThreadPoolExecutor-1_0): Acquiring new spark connection "list_None_robertodelta".
+2021-09-22 15:07:52.774543 (ThreadPoolExecutor-1_0): NotImplemented: add_begin_query
+2021-09-22 15:07:52.774704 (ThreadPoolExecutor-1_0): Using spark connection "list_None_robertodelta".
+2021-09-22 15:07:52.774803 (ThreadPoolExecutor-1_0): On list_None_robertodelta: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "connection_name": "list_None_robertodelta"} */
+show table extended in robertodelta like '*'
+  
+2021-09-22 15:07:52.774901 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-09-22 15:08:06.964669 (ThreadPoolExecutor-1_0): SQL status: OK in 14.19 seconds
+2021-09-22 15:08:07.054166 (ThreadPoolExecutor-1_0): On list_None_robertodelta: ROLLBACK
+2021-09-22 15:08:07.054369 (ThreadPoolExecutor-1_0): NotImplemented: rollback
+2021-09-22 15:08:07.054501 (ThreadPoolExecutor-1_0): On list_None_robertodelta: Close
+2021-09-22 15:08:07.110730 (MainThread): NotImplemented: add_begin_query
+2021-09-22 15:08:07.110938 (MainThread): NotImplemented: commit
+2021-09-22 15:08:07.111330 (MainThread): 08:08:07 | Concurrency: 1 threads (target='dev')
+2021-09-22 15:08:07.111553 (MainThread): 08:08:07 | 
+2021-09-22 15:08:07.115010 (Thread-1): Began running node model.my_new_project.my_first_dbt_model
+2021-09-22 15:08:07.115359 (Thread-1): 08:08:07 | 1 of 2 START table model robertodelta.my_first_dbt_model............. [RUN]
+2021-09-22 15:08:07.115713 (Thread-1): Acquiring new spark connection "model.my_new_project.my_first_dbt_model".
+2021-09-22 15:08:07.191016 (Thread-1): Compiling model.my_new_project.my_first_dbt_model
+2021-09-22 15:08:07.193878 (Thread-1): Writing injected SQL for node "model.my_new_project.my_first_dbt_model"
+2021-09-22 15:08:07.194696 (Thread-1): finished collecting timing info
+2021-09-22 15:08:07.211469 (Thread-1): Using spark connection "model.my_new_project.my_first_dbt_model".
+2021-09-22 15:08:07.211578 (Thread-1): On model.my_new_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "node_id": "model.my_new_project.my_first_dbt_model"} */
+drop table if exists robertodelta.my_first_dbt_model
+2021-09-22 15:08:07.211662 (Thread-1): Opening a new connection, currently in state closed
+2021-09-22 15:08:09.646482 (Thread-1): SQL status: OK in 2.43 seconds
+2021-09-22 15:08:09.672525 (Thread-1): Writing runtime SQL for node "model.my_new_project.my_first_dbt_model"
+2021-09-22 15:08:09.673180 (Thread-1): NotImplemented: add_begin_query
+2021-09-22 15:08:09.673269 (Thread-1): Using spark connection "model.my_new_project.my_first_dbt_model".
+2021-09-22 15:08:09.673345 (Thread-1): On model.my_new_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "node_id": "model.my_new_project.my_first_dbt_model"} */
+
+      create table robertodelta.my_first_dbt_model
+    
+    
+    
+    
+    
+    
+    
+    as
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+2021-09-22 15:08:34.485414 (Thread-1): SQL status: OK in 24.81 seconds
+2021-09-22 15:08:34.492648 (Thread-1): finished collecting timing info
+2021-09-22 15:08:34.492815 (Thread-1): On model.my_new_project.my_first_dbt_model: ROLLBACK
+2021-09-22 15:08:34.492921 (Thread-1): NotImplemented: rollback
+2021-09-22 15:08:34.492999 (Thread-1): On model.my_new_project.my_first_dbt_model: Close
+2021-09-22 15:08:34.546681 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '52b99d4a-8503-4f67-bc68-26997735d1eb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4d2d84f70>]}
+2021-09-22 15:08:34.547224 (Thread-1): 08:08:34 | 1 of 2 OK created table model robertodelta.my_first_dbt_model........ [OK in 27.43s]
+2021-09-22 15:08:34.547419 (Thread-1): Finished running node model.my_new_project.my_first_dbt_model
+2021-09-22 15:08:34.548126 (Thread-1): Began running node model.my_new_project.my_second_dbt_model
+2021-09-22 15:08:34.548428 (Thread-1): 08:08:34 | 2 of 2 START view model robertodelta.my_second_dbt_model............. [RUN]
+2021-09-22 15:08:34.548798 (Thread-1): Acquiring new spark connection "model.my_new_project.my_second_dbt_model".
+2021-09-22 15:08:34.617467 (Thread-1): Compiling model.my_new_project.my_second_dbt_model
+2021-09-22 15:08:34.620283 (Thread-1): Writing injected SQL for node "model.my_new_project.my_second_dbt_model"
+2021-09-22 15:08:34.620776 (Thread-1): finished collecting timing info
+2021-09-22 15:08:34.633940 (Thread-1): Writing runtime SQL for node "model.my_new_project.my_second_dbt_model"
+2021-09-22 15:08:34.634343 (Thread-1): NotImplemented: add_begin_query
+2021-09-22 15:08:34.634431 (Thread-1): Using spark connection "model.my_new_project.my_second_dbt_model".
+2021-09-22 15:08:34.634505 (Thread-1): On model.my_new_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "node_id": "model.my_new_project.my_second_dbt_model"} */
+create or replace view robertodelta.my_second_dbt_model
+  
+  as
+    -- Use the `ref` function to select from other models
+
+select *
+from robertodelta.my_first_dbt_model
+where id = 1
+
+2021-09-22 15:08:34.634581 (Thread-1): Opening a new connection, currently in state closed
+2021-09-22 15:08:36.411924 (Thread-1): SQL status: OK in 1.78 seconds
+2021-09-22 15:08:36.413278 (Thread-1): NotImplemented: commit
+2021-09-22 15:08:36.413827 (Thread-1): finished collecting timing info
+2021-09-22 15:08:36.414025 (Thread-1): On model.my_new_project.my_second_dbt_model: ROLLBACK
+2021-09-22 15:08:36.414123 (Thread-1): NotImplemented: rollback
+2021-09-22 15:08:36.414210 (Thread-1): On model.my_new_project.my_second_dbt_model: Close
+2021-09-22 15:08:36.414615 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '52b99d4a-8503-4f67-bc68-26997735d1eb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4d2d84f70>]}
+2021-09-22 15:08:36.414960 (Thread-1): 08:08:36 | 2 of 2 OK created view model robertodelta.my_second_dbt_model........ [OK in 1.87s]
+2021-09-22 15:08:36.415107 (Thread-1): Finished running node model.my_new_project.my_second_dbt_model
+2021-09-22 15:08:36.416145 (MainThread): Acquiring new spark connection "master".
+2021-09-22 15:08:36.416294 (MainThread): On master: ROLLBACK
+2021-09-22 15:08:36.416392 (MainThread): Opening a new connection, currently in state init
+2021-09-22 15:08:36.560519 (MainThread): NotImplemented: rollback
+2021-09-22 15:08:36.560752 (MainThread): NotImplemented: add_begin_query
+2021-09-22 15:08:36.560867 (MainThread): NotImplemented: commit
+2021-09-22 15:08:36.561001 (MainThread): On master: ROLLBACK
+2021-09-22 15:08:36.561105 (MainThread): NotImplemented: rollback
+2021-09-22 15:08:36.561206 (MainThread): On master: Close
+2021-09-22 15:08:36.561592 (MainThread): 08:08:36 | 
+2021-09-22 15:08:36.561764 (MainThread): 08:08:36 | Finished running 1 table model, 1 view model in 45.26s.
+2021-09-22 15:08:36.561907 (MainThread): Connection 'master' was properly closed.
+2021-09-22 15:08:36.562014 (MainThread): Connection 'model.my_new_project.my_second_dbt_model' was properly closed.
+2021-09-22 15:08:36.704595 (MainThread): 
+2021-09-22 15:08:36.704751 (MainThread): Completed successfully
+2021-09-22 15:08:36.704879 (MainThread): 
+Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+2021-09-22 15:08:36.705042 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4d2ccbeb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4d2d919d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4d2cc2f10>]}
+2021-09-22 15:08:36.705231 (MainThread): Flushing usage events
+2021-10-13 01:46:36.697157 (MainThread): Running with dbt=0.20.1
+2021-10-13 01:46:36.730489 (MainThread): the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+2021-10-13 01:46:36.747156 (MainThread): ipaddress module is available
+2021-10-13 01:46:36.747213 (MainThread): ssl.match_hostname is available
+2021-10-13 01:46:36.808576 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/roberto.salcido/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-10-13 01:46:36.810047 (MainThread): Tracking: tracking
+2021-10-13 01:46:36.832707 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb4ae989d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb4b095760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb4b0a74c0>]}
+2021-10-13 01:46:36.844004 (MainThread): Partial parsing not enabled
+2021-10-13 01:46:36.858980 (MainThread): Parsing macros/adapters.sql
+2021-10-13 01:46:36.889227 (MainThread): Parsing macros/materializations/seed.sql
+2021-10-13 01:46:36.901599 (MainThread): Parsing macros/materializations/view.sql
+2021-10-13 01:46:36.902064 (MainThread): Parsing macros/materializations/table.sql
+2021-10-13 01:46:36.904701 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-10-13 01:46:36.928460 (MainThread): Parsing macros/materializations/incremental/validate.sql
+2021-10-13 01:46:36.933023 (MainThread): Parsing macros/materializations/incremental/strategies.sql
+2021-10-13 01:46:36.938754 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-13 01:46:36.943218 (MainThread): Parsing macros/core.sql
+2021-10-13 01:46:36.946407 (MainThread): Parsing macros/materializations/test.sql
+2021-10-13 01:46:36.952286 (MainThread): Parsing macros/materializations/helpers.sql
+2021-10-13 01:46:36.960867 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-10-13 01:46:36.962262 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-10-13 01:46:36.977388 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-10-13 01:46:37.006707 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-10-13 01:46:37.024528 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-10-13 01:46:37.025948 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-13 01:46:37.032272 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-10-13 01:46:37.044438 (MainThread): Parsing macros/materializations/table/table.sql
+2021-10-13 01:46:37.050603 (MainThread): Parsing macros/materializations/view/view.sql
+2021-10-13 01:46:37.055749 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-10-13 01:46:37.059658 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-10-13 01:46:37.060346 (MainThread): Parsing macros/etc/query.sql
+2021-10-13 01:46:37.061108 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-10-13 01:46:37.062351 (MainThread): Parsing macros/etc/datetime.sql
+2021-10-13 01:46:37.069527 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-10-13 01:46:37.071028 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-10-13 01:46:37.072277 (MainThread): Parsing macros/adapters/common.sql
+2021-10-13 01:46:37.111871 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-10-13 01:46:37.113230 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-10-13 01:46:37.114136 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-10-13 01:46:37.115161 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-10-13 01:46:37.273395 (MainThread): Acquiring new spark connection "model.my_new_project.my_first_dbt_model".
+2021-10-13 01:46:37.281152 (MainThread): Acquiring new spark connection "model.my_new_project.my_second_dbt_model".
+2021-10-13 01:46:37.322124 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a1b78320-f42a-448c-9ec8-d161a373a3ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb4b1c9580>]}
+2021-10-13 01:46:37.326497 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a1b78320-f42a-448c-9ec8-d161a373a3ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb4b1079d0>]}
+2021-10-13 01:46:37.326731 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 169 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-10-13 01:46:37.327488 (MainThread): 
+2021-10-13 01:46:37.327734 (MainThread): Acquiring new spark connection "master".
+2021-10-13 01:46:37.328380 (ThreadPoolExecutor-0_0): Acquiring new spark connection "list_schemas".
+2021-10-13 01:46:37.335673 (ThreadPoolExecutor-0_0): Using spark connection "list_schemas".
+2021-10-13 01:46:37.335757 (ThreadPoolExecutor-0_0): On list_schemas: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "connection_name": "list_schemas"} */
+
+    show databases
+  
+2021-10-13 01:46:37.335823 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-10-13 01:46:37.894315 (ThreadPoolExecutor-0_0): Error while running:
+/* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "connection_name": "list_schemas"} */
+
+    show databases
+  
+2021-10-13 01:46:37.894492 (ThreadPoolExecutor-0_0): Database Error
+  failed to connect
+2021-10-13 01:46:37.894676 (ThreadPoolExecutor-0_0): Error while running:
+macro list_schemas
+2021-10-13 01:46:37.894765 (ThreadPoolExecutor-0_0): Runtime Error
+  Database Error
+    failed to connect
+2021-10-13 01:46:37.895448 (MainThread): Connection 'master' was properly closed.
+2021-10-13 01:46:37.895575 (MainThread): Connection 'list_schemas' was properly closed.
+2021-10-13 01:46:37.895766 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb4b18aac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb4b1c90d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb4b1bcf40>]}
+2021-10-13 01:46:37.895999 (MainThread): Flushing usage events
+2021-10-13 01:46:38.379095 (MainThread): Encountered an error:
+2021-10-13 01:46:38.379300 (MainThread): Runtime Error
+  Runtime Error
+    Database Error
+      failed to connect
+2021-10-13 01:46:38.392473 (MainThread): Traceback (most recent call last):
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/spark/connections.py", line 419, in open
+    conn = pyodbc.connect(connection_str, autocommit=True)
+pyodbc.InterfaceError: ('28000', '[28000] [Simba][ThriftExtension] (8) Authentication/authorization error occurred. Error details: Bad status with no error message: Unauthorized/Forbidden: Status code : 403 (8) (SQLDriverConnect)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/spark/connections.py", line 276, in exception_handler
+    yield
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 79, in add_query
+    cursor = connection.handle.cursor()
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/contracts/connection.py", line 81, in handle
+    self._handle.resolve(self)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/contracts/connection.py", line 107, in resolve
+    return self.opener(connection)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/spark/connections.py", line 445, in open
+    raise dbt.exceptions.FailedToConnectException(
+dbt.exceptions.FailedToConnectException: Database Error
+  failed to connect
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/spark/connections.py", line 276, in exception_handler
+    yield
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 1002, in execute_macro
+    result = macro_function(**kwargs)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 20, in macro
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 28, in macro
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 227, in execute
+    return self.connections.execute(
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 131, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/spark/connections.py", line 289, in exception_handler
+    raise dbt.exceptions.RuntimeException(str(exc))
+dbt.exceptions.RuntimeException: Runtime Error
+  Database Error
+    failed to connect
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/task/runnable.py", line 425, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/task/runnable.py", line 383, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/task/run.py", line 410, in before_run
+    self.create_schemas(adapter, selected_uids)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/task/runnable.py", line 514, in create_schemas
+    existing_schemas_lowered.update(ls_future.result())
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/concurrent/futures/_base.py", line 432, in result
+    return self.__get_result()
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/concurrent/futures/_base.py", line 388, in __get_result
+    raise self._exception
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/utils.py", line 474, in connected
+    return func(*args, **kwargs)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/task/runnable.py", line 491, in list_schemas
+    for s in adapter.list_schemas(database_quoted)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/impl.py", line 230, in list_schemas
+    results = self.execute_macro(
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 1002, in execute_macro
+    result = macro_function(**kwargs)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/spark/connections.py", line 289, in exception_handler
+    raise dbt.exceptions.RuntimeException(str(exc))
+dbt.exceptions.RuntimeException: Runtime Error
+  Runtime Error
+    Database Error
+      failed to connect
+
+2021-10-13 01:54:50.325825 (MainThread): Running with dbt=0.20.1
+2021-10-13 01:54:50.342388 (MainThread): the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+2021-10-13 01:54:50.347324 (MainThread): ipaddress module is available
+2021-10-13 01:54:50.347369 (MainThread): ssl.match_hostname is available
+2021-10-13 01:54:50.400686 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/roberto.salcido/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-10-13 01:54:50.401727 (MainThread): Tracking: tracking
+2021-10-13 01:54:50.412675 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff27706b9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff277264cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff27727a4c0>]}
+2021-10-13 01:54:50.422758 (MainThread): Partial parsing not enabled
+2021-10-13 01:54:50.432097 (MainThread): Parsing macros/adapters.sql
+2021-10-13 01:54:50.458548 (MainThread): Parsing macros/materializations/seed.sql
+2021-10-13 01:54:50.470401 (MainThread): Parsing macros/materializations/view.sql
+2021-10-13 01:54:50.470830 (MainThread): Parsing macros/materializations/table.sql
+2021-10-13 01:54:50.473347 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-10-13 01:54:50.495941 (MainThread): Parsing macros/materializations/incremental/validate.sql
+2021-10-13 01:54:50.500467 (MainThread): Parsing macros/materializations/incremental/strategies.sql
+2021-10-13 01:54:50.506110 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-13 01:54:50.510584 (MainThread): Parsing macros/core.sql
+2021-10-13 01:54:50.513738 (MainThread): Parsing macros/materializations/test.sql
+2021-10-13 01:54:50.519565 (MainThread): Parsing macros/materializations/helpers.sql
+2021-10-13 01:54:50.528164 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-10-13 01:54:50.529544 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-10-13 01:54:50.544641 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-10-13 01:54:50.574148 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-10-13 01:54:50.592137 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-10-13 01:54:50.593512 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-13 01:54:50.599667 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-10-13 01:54:50.611231 (MainThread): Parsing macros/materializations/table/table.sql
+2021-10-13 01:54:50.616925 (MainThread): Parsing macros/materializations/view/view.sql
+2021-10-13 01:54:50.621947 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-10-13 01:54:50.625769 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-10-13 01:54:50.626439 (MainThread): Parsing macros/etc/query.sql
+2021-10-13 01:54:50.627196 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-10-13 01:54:50.628403 (MainThread): Parsing macros/etc/datetime.sql
+2021-10-13 01:54:50.635469 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-10-13 01:54:50.636961 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-10-13 01:54:50.638214 (MainThread): Parsing macros/adapters/common.sql
+2021-10-13 01:54:50.677869 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-10-13 01:54:50.679238 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-10-13 01:54:50.680156 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-10-13 01:54:50.681203 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-10-13 01:54:50.832856 (MainThread): Acquiring new spark connection "model.my_new_project.my_first_dbt_model".
+2021-10-13 01:54:50.839810 (MainThread): Acquiring new spark connection "model.my_new_project.my_second_dbt_model".
+2021-10-13 01:54:50.875100 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e5f40e60-9f9d-4658-a4b8-7c8937f3a774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff27739c580>]}
+2021-10-13 01:54:50.879024 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e5f40e60-9f9d-4658-a4b8-7c8937f3a774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2772db9d0>]}
+2021-10-13 01:54:50.879259 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 169 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-10-13 01:54:50.879915 (MainThread): 
+2021-10-13 01:54:50.880162 (MainThread): Acquiring new spark connection "master".
+2021-10-13 01:54:50.880760 (ThreadPoolExecutor-0_0): Acquiring new spark connection "list_schemas".
+2021-10-13 01:54:50.888106 (ThreadPoolExecutor-0_0): Using spark connection "list_schemas".
+2021-10-13 01:54:50.888190 (ThreadPoolExecutor-0_0): On list_schemas: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "connection_name": "list_schemas"} */
+
+    show databases
+  
+2021-10-13 01:54:50.888254 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-10-13 01:54:52.211696 (ThreadPoolExecutor-0_0): SQL status: OK in 1.32 seconds
+2021-10-13 01:54:52.222044 (ThreadPoolExecutor-0_0): On list_schemas: Close
+2021-10-13 01:54:52.223530 (ThreadPoolExecutor-1_0): Acquiring new spark connection "list_None_robertodelta".
+2021-10-13 01:54:52.299473 (ThreadPoolExecutor-1_0): NotImplemented: add_begin_query
+2021-10-13 01:54:52.299613 (ThreadPoolExecutor-1_0): Using spark connection "list_None_robertodelta".
+2021-10-13 01:54:52.299696 (ThreadPoolExecutor-1_0): On list_None_robertodelta: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "connection_name": "list_None_robertodelta"} */
+show table extended in robertodelta like '*'
+  
+2021-10-13 01:54:52.299776 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-10-13 01:55:30.973956 (ThreadPoolExecutor-1_0): SQL status: OK in 38.67 seconds
+2021-10-13 01:55:31.117135 (ThreadPoolExecutor-1_0): On list_None_robertodelta: ROLLBACK
+2021-10-13 01:55:31.117307 (ThreadPoolExecutor-1_0): NotImplemented: rollback
+2021-10-13 01:55:31.117408 (ThreadPoolExecutor-1_0): On list_None_robertodelta: Close
+2021-10-13 01:55:31.196795 (ThreadPoolExecutor-1_0): Acquiring new spark connection "list_None_robertodelta_dbt_test__audit".
+2021-10-13 01:55:31.273225 (ThreadPoolExecutor-1_0): NotImplemented: add_begin_query
+2021-10-13 01:55:31.273390 (ThreadPoolExecutor-1_0): Using spark connection "list_None_robertodelta_dbt_test__audit".
+2021-10-13 01:55:31.273493 (ThreadPoolExecutor-1_0): On list_None_robertodelta_dbt_test__audit: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "connection_name": "list_None_robertodelta_dbt_test__audit"} */
+show table extended in robertodelta_dbt_test__audit like '*'
+  
+2021-10-13 01:55:31.273597 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-10-13 01:55:31.678327 (ThreadPoolExecutor-1_0): Error while running:
+/* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "connection_name": "list_None_robertodelta_dbt_test__audit"} */
+show table extended in robertodelta_dbt_test__audit like '*'
+  
+2021-10-13 01:55:31.678474 (ThreadPoolExecutor-1_0): ('42000', "[42000] [Simba][Hardy] (80) Syntax or semantic analysis error thrown in server while executing query. Error message from server: org.apache.hive.service.cli.HiveSQLException: Error running query: org.apache.spark.sql.catalyst.analysis.NoSuchDatabaseException: Database 'robertodelta_dbt_test__audit' not found\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:948)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:692)\n\tat scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)\n\tat org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:112)\n\tat org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:47)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:53)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:692)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:687)\n\tat java.security.AccessController.doPrivileged(Native Method)\n\tat javax.security.auth.Subject.doAs(Subject.java:422)\n\tat org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1746)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:703)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\nCaused by: org.apache.spark.sql.catalyst.analysis.NoSuchDatabaseException: Database 'robertodelta_dbt_test__audit' not found\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalogImpl.requireDbExists(SessionCatalog.scala:546)\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalogImpl.doListTables(SessionCatalog.scala:1379)\n\tat com.databricks.sql.managedcatalog.ManagedCatalogSessionCatalog.doListTables(ManagedCatalogSessionCatalog.scala:790)\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalog.listTables(SessionCatalog.scala:262)\n\tat org.apache.spark.sql.execution.command.ShowTablesCommand.$anonfun$run$45(tables.scala:924)\n\tat scala.Option.map(Option.scala:230)\n\tat org.apache.spark.sql.execution.command.ShowTablesCommand.run(tables.scala:924)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)\n\tat org.apache.spark.sql.Dataset.$anonfun$logicalPlan$1(Dataset.scala:233)\n\tat org.apache.spark.sql.Dataset.$anonfun$withAction$1(Dataset.scala:3815)\n\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$5(SQLExecution.scala:126)\n\tat org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:269)\n\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$1(SQLExecution.scala:104)\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:852)\n\tat org.apache.spark.sql.execution.SQLExecution$.withCustomExecutionEnv(SQLExecution.scala:77)\n\tat org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:219)\n\tat org.apache.spark.sql.Dataset.withAction(Dataset.scala:3813)\n\tat org.apache.spark.sql.Dataset.<init>(Dataset.scala:233)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$2(SparkExecuteStatementOperation.scala:791)\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:852)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$1(SparkExecuteStatementOperation.scala:773)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.getOrCreateDF(SparkExecuteStatementOperation.scala:762)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.compileQuery(SparkExecuteStatementOperation.scala:773)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:827)\n\t... 16 more\n (80) (SQLExecDirectW)")
+2021-10-13 01:55:31.678687 (ThreadPoolExecutor-1_0): Error while running:
+macro list_relations_without_caching
+2021-10-13 01:55:31.678759 (ThreadPoolExecutor-1_0): Runtime Error
+  ('42000', "[42000] [Simba][Hardy] (80) Syntax or semantic analysis error thrown in server while executing query. Error message from server: org.apache.hive.service.cli.HiveSQLException: Error running query: org.apache.spark.sql.catalyst.analysis.NoSuchDatabaseException: Database 'robertodelta_dbt_test__audit' not found\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:948)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:692)\n\tat scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)\n\tat org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:112)\n\tat org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:47)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:53)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:692)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:687)\n\tat java.security.AccessController.doPrivileged(Native Method)\n\tat javax.security.auth.Subject.doAs(Subject.java:422)\n\tat org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1746)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:703)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\nCaused by: org.apache.spark.sql.catalyst.analysis.NoSuchDatabaseException: Database 'robertodelta_dbt_test__audit' not found\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalogImpl.requireDbExists(SessionCatalog.scala:546)\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalogImpl.doListTables(SessionCatalog.scala:1379)\n\tat com.databricks.sql.managedcatalog.ManagedCatalogSessionCatalog.doListTables(ManagedCatalogSessionCatalog.scala:790)\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalog.listTables(SessionCatalog.scala:262)\n\tat org.apache.spark.sql.execution.command.ShowTablesCommand.$anonfun$run$45(tables.scala:924)\n\tat scala.Option.map(Option.scala:230)\n\tat org.apache.spark.sql.execution.command.ShowTablesCommand.run(tables.scala:924)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)\n\tat org.apache.spark.sql.Dataset.$anonfun$logicalPlan$1(Dataset.scala:233)\n\tat org.apache.spark.sql.Dataset.$anonfun$withAction$1(Dataset.scala:3815)\n\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$5(SQLExecution.scala:126)\n\tat org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:269)\n\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$1(SQLExecution.scala:104)\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:852)\n\tat org.apache.spark.sql.execution.SQLExecution$.withCustomExecutionEnv(SQLExecution.scala:77)\n\tat org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:219)\n\tat org.apache.spark.sql.Dataset.withAction(Dataset.scala:3813)\n\tat org.apache.spark.sql.Dataset.<init>(Dataset.scala:233)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$2(SparkExecuteStatementOperation.scala:791)\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:852)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$1(SparkExecuteStatementOperation.scala:773)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.getOrCreateDF(SparkExecuteStatementOperation.scala:762)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.compileQuery(SparkExecuteStatementOperation.scala:773)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:827)\n\t... 16 more\n (80) (SQLExecDirectW)")
+2021-10-13 01:55:31.678933 (ThreadPoolExecutor-1_0): On list_None_robertodelta_dbt_test__audit: ROLLBACK
+2021-10-13 01:55:31.679002 (ThreadPoolExecutor-1_0): NotImplemented: rollback
+2021-10-13 01:55:31.679063 (ThreadPoolExecutor-1_0): On list_None_robertodelta_dbt_test__audit: Close
+2021-10-13 01:55:31.679487 (MainThread): NotImplemented: add_begin_query
+2021-10-13 01:55:31.679579 (MainThread): NotImplemented: commit
+2021-10-13 01:55:31.679787 (MainThread): 18:55:31 | Concurrency: 1 threads (target='dev')
+2021-10-13 01:55:31.679900 (MainThread): 18:55:31 | 
+2021-10-13 01:55:31.681815 (Thread-1): Began running node model.my_new_project.my_first_dbt_model
+2021-10-13 01:55:31.682068 (Thread-1): 18:55:31 | 1 of 2 START table model robertodelta.my_first_dbt_model............. [RUN]
+2021-10-13 01:55:31.682317 (Thread-1): Acquiring new spark connection "model.my_new_project.my_first_dbt_model".
+2021-10-13 01:55:31.747928 (Thread-1): Compiling model.my_new_project.my_first_dbt_model
+2021-10-13 01:55:31.750896 (Thread-1): Writing injected SQL for node "model.my_new_project.my_first_dbt_model"
+2021-10-13 01:55:31.751461 (Thread-1): finished collecting timing info
+2021-10-13 01:55:31.767001 (Thread-1): Using spark connection "model.my_new_project.my_first_dbt_model".
+2021-10-13 01:55:31.767097 (Thread-1): On model.my_new_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "node_id": "model.my_new_project.my_first_dbt_model"} */
+drop table if exists robertodelta.my_first_dbt_model
+2021-10-13 01:55:31.767173 (Thread-1): Opening a new connection, currently in state closed
+2021-10-13 01:55:33.614241 (Thread-1): SQL status: OK in 1.85 seconds
+2021-10-13 01:55:33.640067 (Thread-1): Writing runtime SQL for node "model.my_new_project.my_first_dbt_model"
+2021-10-13 01:55:33.640543 (Thread-1): NotImplemented: add_begin_query
+2021-10-13 01:55:33.640626 (Thread-1): Using spark connection "model.my_new_project.my_first_dbt_model".
+2021-10-13 01:55:33.640694 (Thread-1): On model.my_new_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "node_id": "model.my_new_project.my_first_dbt_model"} */
+
+      create table robertodelta.my_first_dbt_model
+    
+    
+    
+    
+    
+    
+    
+    as
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+2021-10-13 01:55:58.852464 (Thread-1): SQL status: OK in 25.21 seconds
+2021-10-13 01:55:58.859458 (Thread-1): finished collecting timing info
+2021-10-13 01:55:58.859613 (Thread-1): On model.my_new_project.my_first_dbt_model: ROLLBACK
+2021-10-13 01:55:58.859702 (Thread-1): NotImplemented: rollback
+2021-10-13 01:55:58.859777 (Thread-1): On model.my_new_project.my_first_dbt_model: Close
+2021-10-13 01:55:58.916306 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e5f40e60-9f9d-4658-a4b8-7c8937f3a774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff27746b040>]}
+2021-10-13 01:55:58.916864 (Thread-1): 18:55:58 | 1 of 2 OK created table model robertodelta.my_first_dbt_model........ [OK in 27.23s]
+2021-10-13 01:55:58.917084 (Thread-1): Finished running node model.my_new_project.my_first_dbt_model
+2021-10-13 01:55:58.917757 (Thread-1): Began running node model.my_new_project.my_second_dbt_model
+2021-10-13 01:55:58.918083 (Thread-1): 18:55:58 | 2 of 2 START view model robertodelta.my_second_dbt_model............. [RUN]
+2021-10-13 01:55:58.918559 (Thread-1): Acquiring new spark connection "model.my_new_project.my_second_dbt_model".
+2021-10-13 01:55:58.983700 (Thread-1): Compiling model.my_new_project.my_second_dbt_model
+2021-10-13 01:55:58.986512 (Thread-1): Writing injected SQL for node "model.my_new_project.my_second_dbt_model"
+2021-10-13 01:55:58.987099 (Thread-1): finished collecting timing info
+2021-10-13 01:55:58.999951 (Thread-1): Writing runtime SQL for node "model.my_new_project.my_second_dbt_model"
+2021-10-13 01:55:59.000368 (Thread-1): NotImplemented: add_begin_query
+2021-10-13 01:55:59.000455 (Thread-1): Using spark connection "model.my_new_project.my_second_dbt_model".
+2021-10-13 01:55:59.000529 (Thread-1): On model.my_new_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "node_id": "model.my_new_project.my_second_dbt_model"} */
+create or replace view robertodelta.my_second_dbt_model
+  
+  as
+    -- Use the `ref` function to select from other models
+
+select *
+from robertodelta.my_first_dbt_model
+where id = 1
+
+2021-10-13 01:55:59.000604 (Thread-1): Opening a new connection, currently in state closed
+2021-10-13 01:56:00.320241 (Thread-1): SQL status: OK in 1.32 seconds
+2021-10-13 01:56:00.321636 (Thread-1): NotImplemented: commit
+2021-10-13 01:56:00.322191 (Thread-1): finished collecting timing info
+2021-10-13 01:56:00.322387 (Thread-1): On model.my_new_project.my_second_dbt_model: ROLLBACK
+2021-10-13 01:56:00.322492 (Thread-1): NotImplemented: rollback
+2021-10-13 01:56:00.322582 (Thread-1): On model.my_new_project.my_second_dbt_model: Close
+2021-10-13 01:56:00.323000 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e5f40e60-9f9d-4658-a4b8-7c8937f3a774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff277475af0>]}
+2021-10-13 01:56:00.323355 (Thread-1): 18:56:00 | 2 of 2 OK created view model robertodelta.my_second_dbt_model........ [OK in 1.40s]
+2021-10-13 01:56:00.323512 (Thread-1): Finished running node model.my_new_project.my_second_dbt_model
+2021-10-13 01:56:00.324613 (MainThread): Acquiring new spark connection "master".
+2021-10-13 01:56:00.324770 (MainThread): On master: ROLLBACK
+2021-10-13 01:56:00.324874 (MainThread): Opening a new connection, currently in state init
+2021-10-13 01:56:00.499230 (MainThread): NotImplemented: rollback
+2021-10-13 01:56:00.499474 (MainThread): NotImplemented: add_begin_query
+2021-10-13 01:56:00.499601 (MainThread): NotImplemented: commit
+2021-10-13 01:56:00.499743 (MainThread): On master: ROLLBACK
+2021-10-13 01:56:00.499857 (MainThread): NotImplemented: rollback
+2021-10-13 01:56:00.499966 (MainThread): On master: Close
+2021-10-13 01:56:00.500365 (MainThread): 18:56:00 | 
+2021-10-13 01:56:00.500551 (MainThread): 18:56:00 | Finished running 1 table model, 1 view model in 69.62s.
+2021-10-13 01:56:00.500757 (MainThread): Connection 'master' was properly closed.
+2021-10-13 01:56:00.500870 (MainThread): Connection 'model.my_new_project.my_second_dbt_model' was properly closed.
+2021-10-13 01:56:00.655435 (MainThread): 
+2021-10-13 01:56:00.655597 (MainThread): Completed successfully
+2021-10-13 01:56:00.655711 (MainThread): 
+Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+2021-10-13 01:56:00.655875 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff27731cac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2772f3b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff277264cd0>]}
+2021-10-13 01:56:00.656060 (MainThread): Flushing usage events
+2021-10-13 16:03:25.895856 (MainThread): Running with dbt=0.20.1
+2021-10-13 16:03:25.924175 (MainThread): the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+2021-10-13 16:03:25.937102 (MainThread): ipaddress module is available
+2021-10-13 16:03:25.937152 (MainThread): ssl.match_hostname is available
+2021-10-13 16:03:25.997582 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/roberto.salcido/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-10-13 16:03:25.998969 (MainThread): Tracking: tracking
+2021-10-13 16:03:26.190792 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffecd06b7c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffecd2676d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffecd279430>]}
+2021-10-13 16:03:26.204975 (MainThread): Partial parsing not enabled
+2021-10-13 16:03:26.222728 (MainThread): Parsing macros/adapters.sql
+2021-10-13 16:03:26.254500 (MainThread): Parsing macros/materializations/seed.sql
+2021-10-13 16:03:26.267402 (MainThread): Parsing macros/materializations/view.sql
+2021-10-13 16:03:26.267877 (MainThread): Parsing macros/materializations/table.sql
+2021-10-13 16:03:26.270446 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-10-13 16:03:26.293971 (MainThread): Parsing macros/materializations/incremental/validate.sql
+2021-10-13 16:03:26.298640 (MainThread): Parsing macros/materializations/incremental/strategies.sql
+2021-10-13 16:03:26.304664 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-13 16:03:26.309140 (MainThread): Parsing macros/core.sql
+2021-10-13 16:03:26.312281 (MainThread): Parsing macros/materializations/test.sql
+2021-10-13 16:03:26.318513 (MainThread): Parsing macros/materializations/helpers.sql
+2021-10-13 16:03:26.327125 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-10-13 16:03:26.328513 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-10-13 16:03:26.343825 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-10-13 16:03:26.373448 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-10-13 16:03:26.391799 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-10-13 16:03:26.393254 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-13 16:03:26.399836 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-10-13 16:03:26.412092 (MainThread): Parsing macros/materializations/table/table.sql
+2021-10-13 16:03:26.418113 (MainThread): Parsing macros/materializations/view/view.sql
+2021-10-13 16:03:26.423301 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-10-13 16:03:26.427233 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-10-13 16:03:26.427927 (MainThread): Parsing macros/etc/query.sql
+2021-10-13 16:03:26.428695 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-10-13 16:03:26.429927 (MainThread): Parsing macros/etc/datetime.sql
+2021-10-13 16:03:26.437453 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-10-13 16:03:26.438990 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-10-13 16:03:26.440274 (MainThread): Parsing macros/adapters/common.sql
+2021-10-13 16:03:26.481046 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-10-13 16:03:26.482463 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-10-13 16:03:26.483402 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-10-13 16:03:26.484469 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-10-13 16:03:26.644595 (MainThread): Acquiring new spark connection "model.my_new_project.my_first_dbt_model".
+2021-10-13 16:03:26.651956 (MainThread): Acquiring new spark connection "model.my_new_project.my_second_dbt_model".
+2021-10-13 16:03:26.689136 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '74203e8a-9480-4513-979b-e112476c3473', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffecd395fa0>]}
+2021-10-13 16:03:26.692862 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '74203e8a-9480-4513-979b-e112476c3473', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffecd2db760>]}
+2021-10-13 16:03:26.693051 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 169 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-10-13 16:03:26.693663 (MainThread): 
+2021-10-13 16:03:26.693850 (MainThread): Acquiring new spark connection "master".
+2021-10-13 16:03:26.694405 (ThreadPoolExecutor-0_0): Acquiring new spark connection "list_schemas".
+2021-10-13 16:03:26.700810 (ThreadPoolExecutor-0_0): Using spark connection "list_schemas".
+2021-10-13 16:03:26.700882 (ThreadPoolExecutor-0_0): On list_schemas: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "connection_name": "list_schemas"} */
+
+    show databases
+  
+2021-10-13 16:03:26.700941 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-10-13 16:03:27.317673 (ThreadPoolExecutor-0_0): SQL status: OK in 0.62 seconds
+2021-10-13 16:03:27.327848 (ThreadPoolExecutor-0_0): On list_schemas: Close
+2021-10-13 16:03:27.329403 (ThreadPoolExecutor-1_0): Acquiring new spark connection "list_None_robertodelta".
+2021-10-13 16:03:27.408838 (ThreadPoolExecutor-1_0): NotImplemented: add_begin_query
+2021-10-13 16:03:27.408977 (ThreadPoolExecutor-1_0): Using spark connection "list_None_robertodelta".
+2021-10-13 16:03:27.409059 (ThreadPoolExecutor-1_0): On list_None_robertodelta: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "connection_name": "list_None_robertodelta"} */
+show table extended in robertodelta like '*'
+  
+2021-10-13 16:03:27.409140 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-10-13 16:03:39.301698 (ThreadPoolExecutor-1_0): SQL status: OK in 11.89 seconds
+2021-10-13 16:03:39.536784 (ThreadPoolExecutor-1_0): On list_None_robertodelta: ROLLBACK
+2021-10-13 16:03:39.536962 (ThreadPoolExecutor-1_0): NotImplemented: rollback
+2021-10-13 16:03:39.537065 (ThreadPoolExecutor-1_0): On list_None_robertodelta: Close
+2021-10-13 16:03:39.606611 (ThreadPoolExecutor-1_0): Acquiring new spark connection "list_None_robertodelta_dbt_test__audit".
+2021-10-13 16:03:39.691286 (ThreadPoolExecutor-1_0): NotImplemented: add_begin_query
+2021-10-13 16:03:39.691450 (ThreadPoolExecutor-1_0): Using spark connection "list_None_robertodelta_dbt_test__audit".
+2021-10-13 16:03:39.691554 (ThreadPoolExecutor-1_0): On list_None_robertodelta_dbt_test__audit: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "connection_name": "list_None_robertodelta_dbt_test__audit"} */
+show table extended in robertodelta_dbt_test__audit like '*'
+  
+2021-10-13 16:03:39.691655 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-10-13 16:03:40.476387 (ThreadPoolExecutor-1_0): Error while running:
+/* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "connection_name": "list_None_robertodelta_dbt_test__audit"} */
+show table extended in robertodelta_dbt_test__audit like '*'
+  
+2021-10-13 16:03:40.476528 (ThreadPoolExecutor-1_0): ('42000', "[42000] [Simba][Hardy] (80) Syntax or semantic analysis error thrown in server while executing query. Error message from server: org.apache.hive.service.cli.HiveSQLException: Error running query: org.apache.spark.sql.catalyst.analysis.NoSuchDatabaseException: Database 'robertodelta_dbt_test__audit' not found\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:948)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:692)\n\tat scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)\n\tat org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:112)\n\tat org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:47)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:53)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:692)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:687)\n\tat java.security.AccessController.doPrivileged(Native Method)\n\tat javax.security.auth.Subject.doAs(Subject.java:422)\n\tat org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1746)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:703)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\nCaused by: org.apache.spark.sql.catalyst.analysis.NoSuchDatabaseException: Database 'robertodelta_dbt_test__audit' not found\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalogImpl.requireDbExists(SessionCatalog.scala:546)\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalogImpl.doListTables(SessionCatalog.scala:1379)\n\tat com.databricks.sql.managedcatalog.ManagedCatalogSessionCatalog.doListTables(ManagedCatalogSessionCatalog.scala:790)\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalog.listTables(SessionCatalog.scala:262)\n\tat org.apache.spark.sql.execution.command.ShowTablesCommand.$anonfun$run$45(tables.scala:924)\n\tat scala.Option.map(Option.scala:230)\n\tat org.apache.spark.sql.execution.command.ShowTablesCommand.run(tables.scala:924)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)\n\tat org.apache.spark.sql.Dataset.$anonfun$logicalPlan$1(Dataset.scala:233)\n\tat org.apache.spark.sql.Dataset.$anonfun$withAction$1(Dataset.scala:3815)\n\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$5(SQLExecution.scala:126)\n\tat org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:269)\n\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$1(SQLExecution.scala:104)\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:852)\n\tat org.apache.spark.sql.execution.SQLExecution$.withCustomExecutionEnv(SQLExecution.scala:77)\n\tat org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:219)\n\tat org.apache.spark.sql.Dataset.withAction(Dataset.scala:3813)\n\tat org.apache.spark.sql.Dataset.<init>(Dataset.scala:233)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$2(SparkExecuteStatementOperation.scala:791)\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:852)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$1(SparkExecuteStatementOperation.scala:773)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.getOrCreateDF(SparkExecuteStatementOperation.scala:762)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.compileQuery(SparkExecuteStatementOperation.scala:773)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:827)\n\t... 16 more\n (80) (SQLExecDirectW)")
+2021-10-13 16:03:40.476711 (ThreadPoolExecutor-1_0): Error while running:
+macro list_relations_without_caching
+2021-10-13 16:03:40.476782 (ThreadPoolExecutor-1_0): Runtime Error
+  ('42000', "[42000] [Simba][Hardy] (80) Syntax or semantic analysis error thrown in server while executing query. Error message from server: org.apache.hive.service.cli.HiveSQLException: Error running query: org.apache.spark.sql.catalyst.analysis.NoSuchDatabaseException: Database 'robertodelta_dbt_test__audit' not found\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:948)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:692)\n\tat scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)\n\tat org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:112)\n\tat org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:47)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:53)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:692)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:687)\n\tat java.security.AccessController.doPrivileged(Native Method)\n\tat javax.security.auth.Subject.doAs(Subject.java:422)\n\tat org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1746)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:703)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\nCaused by: org.apache.spark.sql.catalyst.analysis.NoSuchDatabaseException: Database 'robertodelta_dbt_test__audit' not found\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalogImpl.requireDbExists(SessionCatalog.scala:546)\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalogImpl.doListTables(SessionCatalog.scala:1379)\n\tat com.databricks.sql.managedcatalog.ManagedCatalogSessionCatalog.doListTables(ManagedCatalogSessionCatalog.scala:790)\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalog.listTables(SessionCatalog.scala:262)\n\tat org.apache.spark.sql.execution.command.ShowTablesCommand.$anonfun$run$45(tables.scala:924)\n\tat scala.Option.map(Option.scala:230)\n\tat org.apache.spark.sql.execution.command.ShowTablesCommand.run(tables.scala:924)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)\n\tat org.apache.spark.sql.Dataset.$anonfun$logicalPlan$1(Dataset.scala:233)\n\tat org.apache.spark.sql.Dataset.$anonfun$withAction$1(Dataset.scala:3815)\n\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$5(SQLExecution.scala:126)\n\tat org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:269)\n\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$1(SQLExecution.scala:104)\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:852)\n\tat org.apache.spark.sql.execution.SQLExecution$.withCustomExecutionEnv(SQLExecution.scala:77)\n\tat org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:219)\n\tat org.apache.spark.sql.Dataset.withAction(Dataset.scala:3813)\n\tat org.apache.spark.sql.Dataset.<init>(Dataset.scala:233)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$2(SparkExecuteStatementOperation.scala:791)\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:852)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$1(SparkExecuteStatementOperation.scala:773)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.getOrCreateDF(SparkExecuteStatementOperation.scala:762)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.compileQuery(SparkExecuteStatementOperation.scala:773)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:827)\n\t... 16 more\n (80) (SQLExecDirectW)")
+2021-10-13 16:03:40.476944 (ThreadPoolExecutor-1_0): On list_None_robertodelta_dbt_test__audit: ROLLBACK
+2021-10-13 16:03:40.477015 (ThreadPoolExecutor-1_0): NotImplemented: rollback
+2021-10-13 16:03:40.477078 (ThreadPoolExecutor-1_0): On list_None_robertodelta_dbt_test__audit: Close
+2021-10-13 16:03:40.477501 (MainThread): NotImplemented: add_begin_query
+2021-10-13 16:03:40.477590 (MainThread): NotImplemented: commit
+2021-10-13 16:03:40.477807 (MainThread): 09:03:40 | Concurrency: 1 threads (target='dev')
+2021-10-13 16:03:40.477919 (MainThread): 09:03:40 | 
+2021-10-13 16:03:40.479892 (Thread-1): Began running node model.my_new_project.my_first_dbt_model
+2021-10-13 16:03:40.480164 (Thread-1): 09:03:40 | 1 of 2 START table model robertodelta.my_first_dbt_model............. [RUN]
+2021-10-13 16:03:40.480433 (Thread-1): Acquiring new spark connection "model.my_new_project.my_first_dbt_model".
+2021-10-13 16:03:40.553680 (Thread-1): Compiling model.my_new_project.my_first_dbt_model
+2021-10-13 16:03:40.556693 (Thread-1): Writing injected SQL for node "model.my_new_project.my_first_dbt_model"
+2021-10-13 16:03:40.557323 (Thread-1): finished collecting timing info
+2021-10-13 16:03:40.573064 (Thread-1): Using spark connection "model.my_new_project.my_first_dbt_model".
+2021-10-13 16:03:40.573162 (Thread-1): On model.my_new_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "node_id": "model.my_new_project.my_first_dbt_model"} */
+drop table if exists robertodelta.my_first_dbt_model
+2021-10-13 16:03:40.573244 (Thread-1): Opening a new connection, currently in state closed
+2021-10-13 16:03:42.162090 (Thread-1): SQL status: OK in 1.59 seconds
+2021-10-13 16:03:42.187836 (Thread-1): Writing runtime SQL for node "model.my_new_project.my_first_dbt_model"
+2021-10-13 16:03:42.188336 (Thread-1): NotImplemented: add_begin_query
+2021-10-13 16:03:42.188421 (Thread-1): Using spark connection "model.my_new_project.my_first_dbt_model".
+2021-10-13 16:03:42.188492 (Thread-1): On model.my_new_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "node_id": "model.my_new_project.my_first_dbt_model"} */
+
+      create table robertodelta.my_first_dbt_model
+    
+    
+    
+    
+    
+    
+    
+    as
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+2021-10-13 16:03:57.225211 (Thread-1): SQL status: OK in 15.04 seconds
+2021-10-13 16:03:57.232184 (Thread-1): finished collecting timing info
+2021-10-13 16:03:57.232342 (Thread-1): On model.my_new_project.my_first_dbt_model: ROLLBACK
+2021-10-13 16:03:57.232432 (Thread-1): NotImplemented: rollback
+2021-10-13 16:03:57.232507 (Thread-1): On model.my_new_project.my_first_dbt_model: Close
+2021-10-13 16:03:57.302248 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74203e8a-9480-4513-979b-e112476c3473', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffecd465f40>]}
+2021-10-13 16:03:57.302788 (Thread-1): 09:03:57 | 1 of 2 OK created table model robertodelta.my_first_dbt_model........ [OK in 16.82s]
+2021-10-13 16:03:57.302996 (Thread-1): Finished running node model.my_new_project.my_first_dbt_model
+2021-10-13 16:03:57.303804 (Thread-1): Began running node model.my_new_project.my_second_dbt_model
+2021-10-13 16:03:57.304144 (Thread-1): 09:03:57 | 2 of 2 START view model robertodelta.my_second_dbt_model............. [RUN]
+2021-10-13 16:03:57.304535 (Thread-1): Acquiring new spark connection "model.my_new_project.my_second_dbt_model".
+2021-10-13 16:03:57.378313 (Thread-1): Compiling model.my_new_project.my_second_dbt_model
+2021-10-13 16:03:57.381081 (Thread-1): Writing injected SQL for node "model.my_new_project.my_second_dbt_model"
+2021-10-13 16:03:57.381628 (Thread-1): finished collecting timing info
+2021-10-13 16:03:57.394763 (Thread-1): Writing runtime SQL for node "model.my_new_project.my_second_dbt_model"
+2021-10-13 16:03:57.395180 (Thread-1): NotImplemented: add_begin_query
+2021-10-13 16:03:57.395270 (Thread-1): Using spark connection "model.my_new_project.my_second_dbt_model".
+2021-10-13 16:03:57.395361 (Thread-1): On model.my_new_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "node_id": "model.my_new_project.my_second_dbt_model"} */
+create or replace view robertodelta.my_second_dbt_model
+  
+  as
+    -- Use the `ref` function to select from other models
+
+select *
+from robertodelta.my_first_dbt_model
+where id = 1
+
+2021-10-13 16:03:57.395439 (Thread-1): Opening a new connection, currently in state closed
+2021-10-13 16:03:58.475938 (Thread-1): SQL status: OK in 1.08 seconds
+2021-10-13 16:03:58.477335 (Thread-1): NotImplemented: commit
+2021-10-13 16:03:58.477919 (Thread-1): finished collecting timing info
+2021-10-13 16:03:58.478088 (Thread-1): On model.my_new_project.my_second_dbt_model: ROLLBACK
+2021-10-13 16:03:58.478196 (Thread-1): NotImplemented: rollback
+2021-10-13 16:03:58.478290 (Thread-1): On model.my_new_project.my_second_dbt_model: Close
+2021-10-13 16:03:58.478727 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74203e8a-9480-4513-979b-e112476c3473', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffecd471f70>]}
+2021-10-13 16:03:58.479101 (Thread-1): 09:03:58 | 2 of 2 OK created view model robertodelta.my_second_dbt_model........ [OK in 1.17s]
+2021-10-13 16:03:58.479259 (Thread-1): Finished running node model.my_new_project.my_second_dbt_model
+2021-10-13 16:03:58.480369 (MainThread): Acquiring new spark connection "master".
+2021-10-13 16:03:58.480527 (MainThread): On master: ROLLBACK
+2021-10-13 16:03:58.480632 (MainThread): Opening a new connection, currently in state init
+2021-10-13 16:03:58.699196 (MainThread): NotImplemented: rollback
+2021-10-13 16:03:58.699433 (MainThread): NotImplemented: add_begin_query
+2021-10-13 16:03:58.699557 (MainThread): NotImplemented: commit
+2021-10-13 16:03:58.699696 (MainThread): On master: ROLLBACK
+2021-10-13 16:03:58.699808 (MainThread): NotImplemented: rollback
+2021-10-13 16:03:58.699915 (MainThread): On master: Close
+2021-10-13 16:03:58.700308 (MainThread): 09:03:58 | 
+2021-10-13 16:03:58.700489 (MainThread): 09:03:58 | Finished running 1 table model, 1 view model in 32.01s.
+2021-10-13 16:03:58.700646 (MainThread): Connection 'master' was properly closed.
+2021-10-13 16:03:58.700762 (MainThread): Connection 'model.my_new_project.my_second_dbt_model' was properly closed.
+2021-10-13 16:03:58.875624 (MainThread): 
+2021-10-13 16:03:58.875787 (MainThread): Completed successfully
+2021-10-13 16:03:58.875904 (MainThread): 
+Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+2021-10-13 16:03:58.876068 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffecd43bbb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffecd312d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffecd2676d0>]}
+2021-10-13 16:03:58.876257 (MainThread): Flushing usage events
+2021-10-13 16:12:23.196341 (MainThread): Running with dbt=0.20.1
+2021-10-13 16:12:23.212814 (MainThread): the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+2021-10-13 16:12:23.217903 (MainThread): ipaddress module is available
+2021-10-13 16:12:23.217953 (MainThread): ssl.match_hostname is available
+2021-10-13 16:12:23.272390 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/roberto.salcido/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-10-13 16:12:23.273348 (MainThread): Tracking: tracking
+2021-10-13 16:12:23.480891 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe921d70af0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe922894c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9228a6430>]}
+2021-10-13 16:12:23.491961 (MainThread): Partial parsing not enabled
+2021-10-13 16:12:23.504514 (MainThread): Parsing macros/adapters.sql
+2021-10-13 16:12:23.531094 (MainThread): Parsing macros/materializations/seed.sql
+2021-10-13 16:12:23.543422 (MainThread): Parsing macros/materializations/view.sql
+2021-10-13 16:12:23.543888 (MainThread): Parsing macros/materializations/table.sql
+2021-10-13 16:12:23.546504 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-10-13 16:12:23.569837 (MainThread): Parsing macros/materializations/incremental/validate.sql
+2021-10-13 16:12:23.574284 (MainThread): Parsing macros/materializations/incremental/strategies.sql
+2021-10-13 16:12:23.579895 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-13 16:12:23.584353 (MainThread): Parsing macros/core.sql
+2021-10-13 16:12:23.587700 (MainThread): Parsing macros/materializations/test.sql
+2021-10-13 16:12:23.593957 (MainThread): Parsing macros/materializations/helpers.sql
+2021-10-13 16:12:23.602695 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-10-13 16:12:23.604110 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-10-13 16:12:23.619369 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-10-13 16:12:23.648223 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-10-13 16:12:23.666168 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-10-13 16:12:23.667582 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-13 16:12:23.674039 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-10-13 16:12:23.685855 (MainThread): Parsing macros/materializations/table/table.sql
+2021-10-13 16:12:23.691657 (MainThread): Parsing macros/materializations/view/view.sql
+2021-10-13 16:12:23.696956 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-10-13 16:12:23.700865 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-10-13 16:12:23.701550 (MainThread): Parsing macros/etc/query.sql
+2021-10-13 16:12:23.702313 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-10-13 16:12:23.703538 (MainThread): Parsing macros/etc/datetime.sql
+2021-10-13 16:12:23.710750 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-10-13 16:12:23.712269 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-10-13 16:12:23.713528 (MainThread): Parsing macros/adapters/common.sql
+2021-10-13 16:12:23.753427 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-10-13 16:12:23.754806 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-10-13 16:12:23.755718 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-10-13 16:12:23.757083 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-10-13 16:12:23.915321 (MainThread): Acquiring new spark connection "model.my_new_project.my_first_dbt_model".
+2021-10-13 16:12:23.922349 (MainThread): Acquiring new spark connection "model.my_new_project.my_second_dbt_model".
+2021-10-13 16:12:23.924743 (MainThread): Acquiring new spark connection "model.my_new_project.orders".
+2021-10-13 16:12:23.934017 (MainThread): Acquiring new spark connection "snapshot.my_new_project.orders_snapshot".
+2021-10-13 16:12:23.963582 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe922aa1820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe922a40fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe922a4fb50>]}
+2021-10-13 16:12:23.963771 (MainThread): Flushing usage events
+2021-10-13 16:12:24.870402 (MainThread): Connection 'snapshot.my_new_project.orders_snapshot' was properly closed.
+2021-10-13 16:12:24.870631 (MainThread): Encountered an error:
+2021-10-13 16:12:24.870806 (MainThread): Compilation Error in snapshot orders_snapshot (snapshots/orders.sql)
+  Snapshot 'snapshot.my_new_project.orders_snapshot' (snapshots/orders.sql) depends on a source named 'my_new_project.orders' which was not found
+2021-10-13 16:12:24.876841 (MainThread): Traceback (most recent call last):
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/task/runnable.py", line 406, in run
+    self._runtime_initialize()
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/task/runnable.py", line 122, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/task/runnable.py", line 79, in _runtime_initialize
+    self.load_manifest()
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/task/runnable.py", line 66, in load_manifest
+    self.manifest = ManifestLoader.get_full_manifest(self.config)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/parser/manifest.py", line 180, in get_full_manifest
+    manifest = loader.load()
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/parser/manifest.py", line 317, in load
+    self.process_sources(self.root_project.project_name)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/parser/manifest.py", line 731, in process_sources
+    _process_sources_for_node(self.manifest, current_project, node)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/parser/manifest.py", line 1036, in _process_sources_for_node
+    invalid_source_fail_unless_test(
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/parser/manifest.py", line 776, in invalid_source_fail_unless_test
+    source_target_not_found(
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/exceptions.py", line 606, in source_target_not_found
+    raise_compiler_error(msg, model)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/exceptions.py", line 444, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in snapshot orders_snapshot (snapshots/orders.sql)
+  Snapshot 'snapshot.my_new_project.orders_snapshot' (snapshots/orders.sql) depends on a source named 'my_new_project.orders' which was not found
+
+2021-10-13 16:13:28.416526 (MainThread): Running with dbt=0.20.1
+2021-10-13 16:13:28.432684 (MainThread): the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+2021-10-13 16:13:28.438103 (MainThread): ipaddress module is available
+2021-10-13 16:13:28.438152 (MainThread): ssl.match_hostname is available
+2021-10-13 16:13:28.492999 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/roberto.salcido/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-10-13 16:13:28.494358 (MainThread): Tracking: tracking
+2021-10-13 16:13:28.505816 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8724e58a30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8725054ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8725066430>]}
+2021-10-13 16:13:28.516121 (MainThread): Partial parsing not enabled
+2021-10-13 16:13:28.526066 (MainThread): Parsing macros/adapters.sql
+2021-10-13 16:13:28.553366 (MainThread): Parsing macros/materializations/seed.sql
+2021-10-13 16:13:28.565372 (MainThread): Parsing macros/materializations/view.sql
+2021-10-13 16:13:28.565810 (MainThread): Parsing macros/materializations/table.sql
+2021-10-13 16:13:28.568481 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-10-13 16:13:28.591431 (MainThread): Parsing macros/materializations/incremental/validate.sql
+2021-10-13 16:13:28.596013 (MainThread): Parsing macros/materializations/incremental/strategies.sql
+2021-10-13 16:13:28.601714 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-13 16:13:28.606113 (MainThread): Parsing macros/core.sql
+2021-10-13 16:13:28.609516 (MainThread): Parsing macros/materializations/test.sql
+2021-10-13 16:13:28.615408 (MainThread): Parsing macros/materializations/helpers.sql
+2021-10-13 16:13:28.624008 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-10-13 16:13:28.625399 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-10-13 16:13:28.640339 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-10-13 16:13:28.669718 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-10-13 16:13:28.688280 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-10-13 16:13:28.689729 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-13 16:13:28.696227 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-10-13 16:13:28.708329 (MainThread): Parsing macros/materializations/table/table.sql
+2021-10-13 16:13:28.714270 (MainThread): Parsing macros/materializations/view/view.sql
+2021-10-13 16:13:28.719532 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-10-13 16:13:28.723455 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-10-13 16:13:28.724143 (MainThread): Parsing macros/etc/query.sql
+2021-10-13 16:13:28.724906 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-10-13 16:13:28.726131 (MainThread): Parsing macros/etc/datetime.sql
+2021-10-13 16:13:28.733324 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-10-13 16:13:28.734834 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-10-13 16:13:28.736101 (MainThread): Parsing macros/adapters/common.sql
+2021-10-13 16:13:28.777048 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-10-13 16:13:28.778458 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-10-13 16:13:28.779394 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-10-13 16:13:28.780612 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-10-13 16:13:28.939160 (MainThread): Acquiring new spark connection "model.my_new_project.my_first_dbt_model".
+2021-10-13 16:13:28.946211 (MainThread): Acquiring new spark connection "model.my_new_project.my_second_dbt_model".
+2021-10-13 16:13:28.948610 (MainThread): Acquiring new spark connection "model.my_new_project.orders".
+2021-10-13 16:13:28.958080 (MainThread): Acquiring new spark connection "snapshot.my_new_project.orders_snapshot".
+2021-10-13 16:13:28.987325 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f872515ffa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f872513a0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f872510faf0>]}
+2021-10-13 16:13:28.987517 (MainThread): Flushing usage events
+2021-10-13 16:13:29.435131 (MainThread): Connection 'snapshot.my_new_project.orders_snapshot' was properly closed.
+2021-10-13 16:13:29.435358 (MainThread): Encountered an error:
+2021-10-13 16:13:29.435538 (MainThread): Compilation Error in snapshot orders_snapshot (snapshots/orders.sql)
+  Snapshot 'snapshot.my_new_project.orders_snapshot' (snapshots/orders.sql) depends on a source named 'robertodelta.orders' which was not found
+2021-10-13 16:13:29.437239 (MainThread): Traceback (most recent call last):
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/task/runnable.py", line 406, in run
+    self._runtime_initialize()
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/task/runnable.py", line 122, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/task/runnable.py", line 79, in _runtime_initialize
+    self.load_manifest()
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/task/runnable.py", line 66, in load_manifest
+    self.manifest = ManifestLoader.get_full_manifest(self.config)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/parser/manifest.py", line 180, in get_full_manifest
+    manifest = loader.load()
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/parser/manifest.py", line 317, in load
+    self.process_sources(self.root_project.project_name)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/parser/manifest.py", line 731, in process_sources
+    _process_sources_for_node(self.manifest, current_project, node)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/parser/manifest.py", line 1036, in _process_sources_for_node
+    invalid_source_fail_unless_test(
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/parser/manifest.py", line 776, in invalid_source_fail_unless_test
+    source_target_not_found(
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/exceptions.py", line 606, in source_target_not_found
+    raise_compiler_error(msg, model)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/exceptions.py", line 444, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in snapshot orders_snapshot (snapshots/orders.sql)
+  Snapshot 'snapshot.my_new_project.orders_snapshot' (snapshots/orders.sql) depends on a source named 'robertodelta.orders' which was not found
+
+2021-10-13 16:16:14.117058 (MainThread): Running with dbt=0.20.1
+2021-10-13 16:16:14.133194 (MainThread): the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+2021-10-13 16:16:14.138236 (MainThread): ipaddress module is available
+2021-10-13 16:16:14.138284 (MainThread): ssl.match_hostname is available
+2021-10-13 16:16:14.192868 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/roberto.salcido/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-10-13 16:16:14.194067 (MainThread): Tracking: tracking
+2021-10-13 16:16:14.205488 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feeab12c8e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feeab327c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feeab3393d0>]}
+2021-10-13 16:16:14.216359 (MainThread): Partial parsing not enabled
+2021-10-13 16:16:14.227161 (MainThread): Parsing macros/adapters.sql
+2021-10-13 16:16:14.254356 (MainThread): Parsing macros/materializations/seed.sql
+2021-10-13 16:16:14.266789 (MainThread): Parsing macros/materializations/view.sql
+2021-10-13 16:16:14.267235 (MainThread): Parsing macros/materializations/table.sql
+2021-10-13 16:16:14.269818 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-10-13 16:16:14.292846 (MainThread): Parsing macros/materializations/incremental/validate.sql
+2021-10-13 16:16:14.297589 (MainThread): Parsing macros/materializations/incremental/strategies.sql
+2021-10-13 16:16:14.303237 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-13 16:16:14.307785 (MainThread): Parsing macros/core.sql
+2021-10-13 16:16:14.310983 (MainThread): Parsing macros/materializations/test.sql
+2021-10-13 16:16:14.317228 (MainThread): Parsing macros/materializations/helpers.sql
+2021-10-13 16:16:14.326449 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-10-13 16:16:14.328018 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-10-13 16:16:14.343194 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-10-13 16:16:14.374558 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-10-13 16:16:14.394781 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-10-13 16:16:14.397125 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-13 16:16:14.403735 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-10-13 16:16:14.416060 (MainThread): Parsing macros/materializations/table/table.sql
+2021-10-13 16:16:14.422213 (MainThread): Parsing macros/materializations/view/view.sql
+2021-10-13 16:16:14.427722 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-10-13 16:16:14.431882 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-10-13 16:16:14.432606 (MainThread): Parsing macros/etc/query.sql
+2021-10-13 16:16:14.433408 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-10-13 16:16:14.434710 (MainThread): Parsing macros/etc/datetime.sql
+2021-10-13 16:16:14.442350 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-10-13 16:16:14.443945 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-10-13 16:16:14.445271 (MainThread): Parsing macros/adapters/common.sql
+2021-10-13 16:16:14.487757 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-10-13 16:16:14.489327 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-10-13 16:16:14.490341 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-10-13 16:16:14.491460 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-10-13 16:16:14.658200 (MainThread): Acquiring new spark connection "model.my_new_project.my_first_dbt_model".
+2021-10-13 16:16:14.665685 (MainThread): Acquiring new spark connection "model.my_new_project.my_second_dbt_model".
+2021-10-13 16:16:14.668171 (MainThread): Acquiring new spark connection "model.my_new_project.orders".
+2021-10-13 16:16:14.677401 (MainThread): Acquiring new spark connection "snapshot.my_new_project.orders_snapshot".
+2021-10-13 16:16:14.718144 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5a6ce9ca-7281-449c-aeb2-d456edb58a42', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feeab6fa760>]}
+2021-10-13 16:16:14.721905 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5a6ce9ca-7281-449c-aeb2-d456edb58a42', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feeab39b880>]}
+2021-10-13 16:16:14.722071 (MainThread): Found 3 models, 4 tests, 1 snapshot, 0 analyses, 169 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-10-13 16:16:14.722751 (MainThread): 
+2021-10-13 16:16:14.722955 (MainThread): Acquiring new spark connection "master".
+2021-10-13 16:16:14.723684 (ThreadPoolExecutor-0_0): Acquiring new spark connection "list_schemas".
+2021-10-13 16:16:14.730183 (ThreadPoolExecutor-0_0): Using spark connection "list_schemas".
+2021-10-13 16:16:14.730265 (ThreadPoolExecutor-0_0): On list_schemas: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "connection_name": "list_schemas"} */
+
+    show databases
+  
+2021-10-13 16:16:14.730330 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-10-13 16:16:15.227109 (ThreadPoolExecutor-0_0): SQL status: OK in 0.50 seconds
+2021-10-13 16:16:15.234941 (ThreadPoolExecutor-0_0): On list_schemas: Close
+2021-10-13 16:16:15.236502 (ThreadPoolExecutor-1_0): Acquiring new spark connection "list_None_robertodelta_dbt_test__audit".
+2021-10-13 16:16:15.316289 (ThreadPoolExecutor-1_0): NotImplemented: add_begin_query
+2021-10-13 16:16:15.316435 (ThreadPoolExecutor-1_0): Using spark connection "list_None_robertodelta_dbt_test__audit".
+2021-10-13 16:16:15.316520 (ThreadPoolExecutor-1_0): On list_None_robertodelta_dbt_test__audit: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "connection_name": "list_None_robertodelta_dbt_test__audit"} */
+show table extended in robertodelta_dbt_test__audit like '*'
+  
+2021-10-13 16:16:15.316605 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-10-13 16:16:15.659003 (ThreadPoolExecutor-1_0): Error while running:
+/* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "connection_name": "list_None_robertodelta_dbt_test__audit"} */
+show table extended in robertodelta_dbt_test__audit like '*'
+  
+2021-10-13 16:16:15.659141 (ThreadPoolExecutor-1_0): ('42000', "[42000] [Simba][Hardy] (80) Syntax or semantic analysis error thrown in server while executing query. Error message from server: org.apache.hive.service.cli.HiveSQLException: Error running query: org.apache.spark.sql.catalyst.analysis.NoSuchDatabaseException: Database 'robertodelta_dbt_test__audit' not found\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:948)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:692)\n\tat scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)\n\tat org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:112)\n\tat org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:47)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:53)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:692)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:687)\n\tat java.security.AccessController.doPrivileged(Native Method)\n\tat javax.security.auth.Subject.doAs(Subject.java:422)\n\tat org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1746)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:703)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\nCaused by: org.apache.spark.sql.catalyst.analysis.NoSuchDatabaseException: Database 'robertodelta_dbt_test__audit' not found\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalogImpl.requireDbExists(SessionCatalog.scala:546)\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalogImpl.doListTables(SessionCatalog.scala:1379)\n\tat com.databricks.sql.managedcatalog.ManagedCatalogSessionCatalog.doListTables(ManagedCatalogSessionCatalog.scala:790)\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalog.listTables(SessionCatalog.scala:262)\n\tat org.apache.spark.sql.execution.command.ShowTablesCommand.$anonfun$run$45(tables.scala:924)\n\tat scala.Option.map(Option.scala:230)\n\tat org.apache.spark.sql.execution.command.ShowTablesCommand.run(tables.scala:924)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)\n\tat org.apache.spark.sql.Dataset.$anonfun$logicalPlan$1(Dataset.scala:233)\n\tat org.apache.spark.sql.Dataset.$anonfun$withAction$1(Dataset.scala:3815)\n\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$5(SQLExecution.scala:126)\n\tat org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:269)\n\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$1(SQLExecution.scala:104)\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:852)\n\tat org.apache.spark.sql.execution.SQLExecution$.withCustomExecutionEnv(SQLExecution.scala:77)\n\tat org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:219)\n\tat org.apache.spark.sql.Dataset.withAction(Dataset.scala:3813)\n\tat org.apache.spark.sql.Dataset.<init>(Dataset.scala:233)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$2(SparkExecuteStatementOperation.scala:791)\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:852)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$1(SparkExecuteStatementOperation.scala:773)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.getOrCreateDF(SparkExecuteStatementOperation.scala:762)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.compileQuery(SparkExecuteStatementOperation.scala:773)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:827)\n\t... 16 more\n (80) (SQLExecDirectW)")
+2021-10-13 16:16:15.659335 (ThreadPoolExecutor-1_0): Error while running:
+macro list_relations_without_caching
+2021-10-13 16:16:15.659408 (ThreadPoolExecutor-1_0): Runtime Error
+  ('42000', "[42000] [Simba][Hardy] (80) Syntax or semantic analysis error thrown in server while executing query. Error message from server: org.apache.hive.service.cli.HiveSQLException: Error running query: org.apache.spark.sql.catalyst.analysis.NoSuchDatabaseException: Database 'robertodelta_dbt_test__audit' not found\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:948)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:692)\n\tat scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)\n\tat org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:112)\n\tat org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:47)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:53)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:692)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:687)\n\tat java.security.AccessController.doPrivileged(Native Method)\n\tat javax.security.auth.Subject.doAs(Subject.java:422)\n\tat org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1746)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:703)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\nCaused by: org.apache.spark.sql.catalyst.analysis.NoSuchDatabaseException: Database 'robertodelta_dbt_test__audit' not found\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalogImpl.requireDbExists(SessionCatalog.scala:546)\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalogImpl.doListTables(SessionCatalog.scala:1379)\n\tat com.databricks.sql.managedcatalog.ManagedCatalogSessionCatalog.doListTables(ManagedCatalogSessionCatalog.scala:790)\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalog.listTables(SessionCatalog.scala:262)\n\tat org.apache.spark.sql.execution.command.ShowTablesCommand.$anonfun$run$45(tables.scala:924)\n\tat scala.Option.map(Option.scala:230)\n\tat org.apache.spark.sql.execution.command.ShowTablesCommand.run(tables.scala:924)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)\n\tat org.apache.spark.sql.Dataset.$anonfun$logicalPlan$1(Dataset.scala:233)\n\tat org.apache.spark.sql.Dataset.$anonfun$withAction$1(Dataset.scala:3815)\n\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$5(SQLExecution.scala:126)\n\tat org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:269)\n\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$1(SQLExecution.scala:104)\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:852)\n\tat org.apache.spark.sql.execution.SQLExecution$.withCustomExecutionEnv(SQLExecution.scala:77)\n\tat org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:219)\n\tat org.apache.spark.sql.Dataset.withAction(Dataset.scala:3813)\n\tat org.apache.spark.sql.Dataset.<init>(Dataset.scala:233)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$2(SparkExecuteStatementOperation.scala:791)\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:852)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$1(SparkExecuteStatementOperation.scala:773)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.getOrCreateDF(SparkExecuteStatementOperation.scala:762)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.compileQuery(SparkExecuteStatementOperation.scala:773)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:827)\n\t... 16 more\n (80) (SQLExecDirectW)")
+2021-10-13 16:16:15.659576 (ThreadPoolExecutor-1_0): On list_None_robertodelta_dbt_test__audit: ROLLBACK
+2021-10-13 16:16:15.659650 (ThreadPoolExecutor-1_0): NotImplemented: rollback
+2021-10-13 16:16:15.659716 (ThreadPoolExecutor-1_0): On list_None_robertodelta_dbt_test__audit: Close
+2021-10-13 16:16:15.660098 (ThreadPoolExecutor-1_0): Acquiring new spark connection "list_None_robertodelta".
+2021-10-13 16:16:15.745077 (ThreadPoolExecutor-1_0): NotImplemented: add_begin_query
+2021-10-13 16:16:15.745250 (ThreadPoolExecutor-1_0): Using spark connection "list_None_robertodelta".
+2021-10-13 16:16:15.745353 (ThreadPoolExecutor-1_0): On list_None_robertodelta: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "connection_name": "list_None_robertodelta"} */
+show table extended in robertodelta like '*'
+  
+2021-10-13 16:16:15.745456 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-10-13 16:16:17.981195 (ThreadPoolExecutor-1_0): SQL status: OK in 2.24 seconds
+2021-10-13 16:16:17.983712 (ThreadPoolExecutor-1_0): On list_None_robertodelta: ROLLBACK
+2021-10-13 16:16:17.983833 (ThreadPoolExecutor-1_0): NotImplemented: rollback
+2021-10-13 16:16:17.983931 (ThreadPoolExecutor-1_0): On list_None_robertodelta: Close
+2021-10-13 16:16:17.985355 (MainThread): NotImplemented: add_begin_query
+2021-10-13 16:16:17.985484 (MainThread): NotImplemented: commit
+2021-10-13 16:16:17.985785 (MainThread): 09:16:17 | Concurrency: 1 threads (target='dev')
+2021-10-13 16:16:17.985944 (MainThread): 09:16:17 | 
+2021-10-13 16:16:17.987640 (Thread-1): Began running node model.my_new_project.my_first_dbt_model
+2021-10-13 16:16:17.987899 (Thread-1): 09:16:17 | 1 of 3 START table model robertodelta.my_first_dbt_model............. [RUN]
+2021-10-13 16:16:17.988171 (Thread-1): Acquiring new spark connection "model.my_new_project.my_first_dbt_model".
+2021-10-13 16:16:18.062683 (Thread-1): Compiling model.my_new_project.my_first_dbt_model
+2021-10-13 16:16:18.065526 (Thread-1): Writing injected SQL for node "model.my_new_project.my_first_dbt_model"
+2021-10-13 16:16:18.066046 (Thread-1): finished collecting timing info
+2021-10-13 16:16:18.083062 (Thread-1): Using spark connection "model.my_new_project.my_first_dbt_model".
+2021-10-13 16:16:18.083173 (Thread-1): On model.my_new_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "node_id": "model.my_new_project.my_first_dbt_model"} */
+drop table if exists robertodelta.my_first_dbt_model
+2021-10-13 16:16:18.083260 (Thread-1): Opening a new connection, currently in state closed
+2021-10-13 16:16:19.356390 (Thread-1): SQL status: OK in 1.27 seconds
+2021-10-13 16:16:19.381670 (Thread-1): Writing runtime SQL for node "model.my_new_project.my_first_dbt_model"
+2021-10-13 16:16:19.382077 (Thread-1): NotImplemented: add_begin_query
+2021-10-13 16:16:19.382159 (Thread-1): Using spark connection "model.my_new_project.my_first_dbt_model".
+2021-10-13 16:16:19.382230 (Thread-1): On model.my_new_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "node_id": "model.my_new_project.my_first_dbt_model"} */
+
+      create table robertodelta.my_first_dbt_model
+    
+    
+    
+    
+    
+    
+    
+    as
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+2021-10-13 16:16:30.043687 (Thread-1): SQL status: OK in 10.66 seconds
+2021-10-13 16:16:30.050535 (Thread-1): finished collecting timing info
+2021-10-13 16:16:30.050696 (Thread-1): On model.my_new_project.my_first_dbt_model: ROLLBACK
+2021-10-13 16:16:30.050785 (Thread-1): NotImplemented: rollback
+2021-10-13 16:16:30.050861 (Thread-1): On model.my_new_project.my_first_dbt_model: Close
+2021-10-13 16:16:30.108990 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5a6ce9ca-7281-449c-aeb2-d456edb58a42', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feeab6373a0>]}
+2021-10-13 16:16:30.109543 (Thread-1): 09:16:30 | 1 of 3 OK created table model robertodelta.my_first_dbt_model........ [OK in 12.12s]
+2021-10-13 16:16:30.109746 (Thread-1): Finished running node model.my_new_project.my_first_dbt_model
+2021-10-13 16:16:30.109950 (Thread-1): Began running node model.my_new_project.orders
+2021-10-13 16:16:30.110235 (Thread-1): 09:16:30 | 2 of 3 START table model robertodelta.orders......................... [RUN]
+2021-10-13 16:16:30.110877 (Thread-1): Acquiring new spark connection "model.my_new_project.orders".
+2021-10-13 16:16:30.182514 (Thread-1): Compiling model.my_new_project.orders
+2021-10-13 16:16:30.186239 (Thread-1): Writing injected SQL for node "model.my_new_project.orders"
+2021-10-13 16:16:30.186675 (Thread-1): finished collecting timing info
+2021-10-13 16:16:30.188811 (Thread-1): Writing runtime SQL for node "model.my_new_project.orders"
+2021-10-13 16:16:30.189214 (Thread-1): NotImplemented: add_begin_query
+2021-10-13 16:16:30.189318 (Thread-1): Using spark connection "model.my_new_project.orders".
+2021-10-13 16:16:30.189402 (Thread-1): On model.my_new_project.orders: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "node_id": "model.my_new_project.orders"} */
+
+      create table robertodelta.orders
+    
+    
+    
+    
+    
+    
+    
+    as
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id, 'pending' as status, '2019-01-01' as updated_at
+    union all
+    select 1 as id, 'shipped' as status, '2019-01-02' as updated_at
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+2021-10-13 16:16:30.189493 (Thread-1): Opening a new connection, currently in state closed
+2021-10-13 16:16:42.408600 (Thread-1): SQL status: OK in 12.22 seconds
+2021-10-13 16:16:42.410494 (Thread-1): finished collecting timing info
+2021-10-13 16:16:42.410725 (Thread-1): On model.my_new_project.orders: ROLLBACK
+2021-10-13 16:16:42.410859 (Thread-1): NotImplemented: rollback
+2021-10-13 16:16:42.410975 (Thread-1): On model.my_new_project.orders: Close
+2021-10-13 16:16:42.463150 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5a6ce9ca-7281-449c-aeb2-d456edb58a42', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feeab763520>]}
+2021-10-13 16:16:42.463539 (Thread-1): 09:16:42 | 2 of 3 OK created table model robertodelta.orders.................... [OK in 12.35s]
+2021-10-13 16:16:42.463679 (Thread-1): Finished running node model.my_new_project.orders
+2021-10-13 16:16:42.463818 (Thread-1): Began running node model.my_new_project.my_second_dbt_model
+2021-10-13 16:16:42.464102 (Thread-1): 09:16:42 | 3 of 3 START view model robertodelta.my_second_dbt_model............. [RUN]
+2021-10-13 16:16:42.464385 (Thread-1): Acquiring new spark connection "model.my_new_project.my_second_dbt_model".
+2021-10-13 16:16:42.538335 (Thread-1): Compiling model.my_new_project.my_second_dbt_model
+2021-10-13 16:16:42.540567 (Thread-1): Writing injected SQL for node "model.my_new_project.my_second_dbt_model"
+2021-10-13 16:16:42.541009 (Thread-1): finished collecting timing info
+2021-10-13 16:16:42.554491 (Thread-1): Writing runtime SQL for node "model.my_new_project.my_second_dbt_model"
+2021-10-13 16:16:42.554952 (Thread-1): NotImplemented: add_begin_query
+2021-10-13 16:16:42.555051 (Thread-1): Using spark connection "model.my_new_project.my_second_dbt_model".
+2021-10-13 16:16:42.555133 (Thread-1): On model.my_new_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "node_id": "model.my_new_project.my_second_dbt_model"} */
+create or replace view robertodelta.my_second_dbt_model
+  
+  as
+    -- Use the `ref` function to select from other models
+
+select *
+from robertodelta.my_first_dbt_model
+where id = 1
+
+2021-10-13 16:16:42.555218 (Thread-1): Opening a new connection, currently in state closed
+2021-10-13 16:16:43.601395 (Thread-1): SQL status: OK in 1.05 seconds
+2021-10-13 16:16:43.602756 (Thread-1): NotImplemented: commit
+2021-10-13 16:16:43.603299 (Thread-1): finished collecting timing info
+2021-10-13 16:16:43.603488 (Thread-1): On model.my_new_project.my_second_dbt_model: ROLLBACK
+2021-10-13 16:16:43.603609 (Thread-1): NotImplemented: rollback
+2021-10-13 16:16:43.603715 (Thread-1): On model.my_new_project.my_second_dbt_model: Close
+2021-10-13 16:16:43.604212 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5a6ce9ca-7281-449c-aeb2-d456edb58a42', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feeabb06460>]}
+2021-10-13 16:16:43.604759 (Thread-1): 09:16:43 | 3 of 3 OK created view model robertodelta.my_second_dbt_model........ [OK in 1.14s]
+2021-10-13 16:16:43.604955 (Thread-1): Finished running node model.my_new_project.my_second_dbt_model
+2021-10-13 16:16:43.606331 (MainThread): Acquiring new spark connection "master".
+2021-10-13 16:16:43.606514 (MainThread): On master: ROLLBACK
+2021-10-13 16:16:43.606632 (MainThread): Opening a new connection, currently in state init
+2021-10-13 16:16:43.767465 (MainThread): NotImplemented: rollback
+2021-10-13 16:16:43.767680 (MainThread): NotImplemented: add_begin_query
+2021-10-13 16:16:43.767788 (MainThread): NotImplemented: commit
+2021-10-13 16:16:43.767906 (MainThread): On master: ROLLBACK
+2021-10-13 16:16:43.767996 (MainThread): NotImplemented: rollback
+2021-10-13 16:16:43.768084 (MainThread): On master: Close
+2021-10-13 16:16:43.768468 (MainThread): 09:16:43 | 
+2021-10-13 16:16:43.768624 (MainThread): 09:16:43 | Finished running 2 table models, 1 view model in 29.05s.
+2021-10-13 16:16:43.768754 (MainThread): Connection 'master' was properly closed.
+2021-10-13 16:16:43.768847 (MainThread): Connection 'model.my_new_project.my_second_dbt_model' was properly closed.
+2021-10-13 16:16:43.921734 (MainThread): 
+2021-10-13 16:16:43.921914 (MainThread): Completed successfully
+2021-10-13 16:16:43.922038 (MainThread): 
+Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+2021-10-13 16:16:43.922215 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feeab12c8e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feeab6644f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feeab6f6c10>]}
+2021-10-13 16:16:43.922420 (MainThread): Flushing usage events
+2021-10-13 16:18:50.325166 (MainThread): Running with dbt=0.20.1
+2021-10-13 16:18:50.341521 (MainThread): the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+2021-10-13 16:18:50.347024 (MainThread): ipaddress module is available
+2021-10-13 16:18:50.347071 (MainThread): ssl.match_hostname is available
+2021-10-13 16:18:50.401976 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.snapshot.SnapshotTask'>, debug=False, defer=None, exclude=None, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/roberto.salcido/.dbt', project_dir=None, record_timing_info=None, rpc_method='snapshot', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', warn_error=False, which='snapshot', write_json=True)
+2021-10-13 16:18:50.402840 (MainThread): Tracking: tracking
+2021-10-13 16:18:50.413176 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83a6a6cd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83a6c695e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83a6c697f0>]}
+2021-10-13 16:18:50.423494 (MainThread): Partial parsing not enabled
+2021-10-13 16:18:50.433269 (MainThread): Parsing macros/adapters.sql
+2021-10-13 16:18:50.460491 (MainThread): Parsing macros/materializations/seed.sql
+2021-10-13 16:18:50.472803 (MainThread): Parsing macros/materializations/view.sql
+2021-10-13 16:18:50.473263 (MainThread): Parsing macros/materializations/table.sql
+2021-10-13 16:18:50.475893 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-10-13 16:18:50.499627 (MainThread): Parsing macros/materializations/incremental/validate.sql
+2021-10-13 16:18:50.504223 (MainThread): Parsing macros/materializations/incremental/strategies.sql
+2021-10-13 16:18:50.510011 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-13 16:18:50.514539 (MainThread): Parsing macros/core.sql
+2021-10-13 16:18:50.517737 (MainThread): Parsing macros/materializations/test.sql
+2021-10-13 16:18:50.523747 (MainThread): Parsing macros/materializations/helpers.sql
+2021-10-13 16:18:50.532295 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-10-13 16:18:50.533674 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-10-13 16:18:50.548636 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-10-13 16:18:50.578280 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-10-13 16:18:50.596524 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-10-13 16:18:50.597976 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-13 16:18:50.604474 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-10-13 16:18:50.616601 (MainThread): Parsing macros/materializations/table/table.sql
+2021-10-13 16:18:50.622338 (MainThread): Parsing macros/materializations/view/view.sql
+2021-10-13 16:18:50.627649 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-10-13 16:18:50.631581 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-10-13 16:18:50.632274 (MainThread): Parsing macros/etc/query.sql
+2021-10-13 16:18:50.633039 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-10-13 16:18:50.634280 (MainThread): Parsing macros/etc/datetime.sql
+2021-10-13 16:18:50.641522 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-10-13 16:18:50.643040 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-10-13 16:18:50.644303 (MainThread): Parsing macros/adapters/common.sql
+2021-10-13 16:18:50.686174 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-10-13 16:18:50.687672 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-10-13 16:18:50.688620 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-10-13 16:18:50.689699 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-10-13 16:18:50.856009 (MainThread): Acquiring new spark connection "model.my_new_project.my_first_dbt_model".
+2021-10-13 16:18:50.863677 (MainThread): Acquiring new spark connection "model.my_new_project.my_second_dbt_model".
+2021-10-13 16:18:50.866189 (MainThread): Acquiring new spark connection "model.my_new_project.orders".
+2021-10-13 16:18:50.875519 (MainThread): Acquiring new spark connection "snapshot.my_new_project.orders_snapshot".
+2021-10-13 16:18:50.915501 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b9922a58-1767-4b53-8ada-104e2e608aca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83a6dd8670>]}
+2021-10-13 16:18:50.919235 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b9922a58-1767-4b53-8ada-104e2e608aca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83a6d69fa0>]}
+2021-10-13 16:18:50.919399 (MainThread): Found 3 models, 4 tests, 1 snapshot, 0 analyses, 169 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-10-13 16:18:50.920049 (MainThread): 
+2021-10-13 16:18:50.920247 (MainThread): Acquiring new spark connection "master".
+2021-10-13 16:18:50.920762 (ThreadPoolExecutor-0_0): Acquiring new spark connection "list_schemas".
+2021-10-13 16:18:50.927656 (ThreadPoolExecutor-0_0): Using spark connection "list_schemas".
+2021-10-13 16:18:50.927742 (ThreadPoolExecutor-0_0): On list_schemas: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "connection_name": "list_schemas"} */
+
+    show databases
+  
+2021-10-13 16:18:50.927808 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-10-13 16:18:51.516861 (ThreadPoolExecutor-0_0): SQL status: OK in 0.59 seconds
+2021-10-13 16:18:51.525142 (ThreadPoolExecutor-0_0): On list_schemas: Close
+2021-10-13 16:18:51.526626 (ThreadPoolExecutor-1_0): Acquiring new spark connection "list_None_robertodelta_dbt_test__audit".
+2021-10-13 16:18:51.601054 (ThreadPoolExecutor-1_0): NotImplemented: add_begin_query
+2021-10-13 16:18:51.601197 (ThreadPoolExecutor-1_0): Using spark connection "list_None_robertodelta_dbt_test__audit".
+2021-10-13 16:18:51.601283 (ThreadPoolExecutor-1_0): On list_None_robertodelta_dbt_test__audit: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "connection_name": "list_None_robertodelta_dbt_test__audit"} */
+show table extended in robertodelta_dbt_test__audit like '*'
+  
+2021-10-13 16:18:51.601372 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-10-13 16:18:51.910917 (ThreadPoolExecutor-1_0): Error while running:
+/* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "connection_name": "list_None_robertodelta_dbt_test__audit"} */
+show table extended in robertodelta_dbt_test__audit like '*'
+  
+2021-10-13 16:18:51.911061 (ThreadPoolExecutor-1_0): ('42000', "[42000] [Simba][Hardy] (80) Syntax or semantic analysis error thrown in server while executing query. Error message from server: org.apache.hive.service.cli.HiveSQLException: Error running query: org.apache.spark.sql.catalyst.analysis.NoSuchDatabaseException: Database 'robertodelta_dbt_test__audit' not found\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:948)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:692)\n\tat scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)\n\tat org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:112)\n\tat org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:47)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:53)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:692)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:687)\n\tat java.security.AccessController.doPrivileged(Native Method)\n\tat javax.security.auth.Subject.doAs(Subject.java:422)\n\tat org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1746)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:703)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\nCaused by: org.apache.spark.sql.catalyst.analysis.NoSuchDatabaseException: Database 'robertodelta_dbt_test__audit' not found\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalogImpl.requireDbExists(SessionCatalog.scala:546)\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalogImpl.doListTables(SessionCatalog.scala:1379)\n\tat com.databricks.sql.managedcatalog.ManagedCatalogSessionCatalog.doListTables(ManagedCatalogSessionCatalog.scala:790)\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalog.listTables(SessionCatalog.scala:262)\n\tat org.apache.spark.sql.execution.command.ShowTablesCommand.$anonfun$run$45(tables.scala:924)\n\tat scala.Option.map(Option.scala:230)\n\tat org.apache.spark.sql.execution.command.ShowTablesCommand.run(tables.scala:924)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)\n\tat org.apache.spark.sql.Dataset.$anonfun$logicalPlan$1(Dataset.scala:233)\n\tat org.apache.spark.sql.Dataset.$anonfun$withAction$1(Dataset.scala:3815)\n\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$5(SQLExecution.scala:126)\n\tat org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:269)\n\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$1(SQLExecution.scala:104)\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:852)\n\tat org.apache.spark.sql.execution.SQLExecution$.withCustomExecutionEnv(SQLExecution.scala:77)\n\tat org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:219)\n\tat org.apache.spark.sql.Dataset.withAction(Dataset.scala:3813)\n\tat org.apache.spark.sql.Dataset.<init>(Dataset.scala:233)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$2(SparkExecuteStatementOperation.scala:791)\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:852)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$1(SparkExecuteStatementOperation.scala:773)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.getOrCreateDF(SparkExecuteStatementOperation.scala:762)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.compileQuery(SparkExecuteStatementOperation.scala:773)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:827)\n\t... 16 more\n (80) (SQLExecDirectW)")
+2021-10-13 16:18:51.911254 (ThreadPoolExecutor-1_0): Error while running:
+macro list_relations_without_caching
+2021-10-13 16:18:51.911329 (ThreadPoolExecutor-1_0): Runtime Error
+  ('42000', "[42000] [Simba][Hardy] (80) Syntax or semantic analysis error thrown in server while executing query. Error message from server: org.apache.hive.service.cli.HiveSQLException: Error running query: org.apache.spark.sql.catalyst.analysis.NoSuchDatabaseException: Database 'robertodelta_dbt_test__audit' not found\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:948)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:692)\n\tat scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)\n\tat org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:112)\n\tat org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:47)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:53)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:692)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:687)\n\tat java.security.AccessController.doPrivileged(Native Method)\n\tat javax.security.auth.Subject.doAs(Subject.java:422)\n\tat org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1746)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:703)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\nCaused by: org.apache.spark.sql.catalyst.analysis.NoSuchDatabaseException: Database 'robertodelta_dbt_test__audit' not found\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalogImpl.requireDbExists(SessionCatalog.scala:546)\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalogImpl.doListTables(SessionCatalog.scala:1379)\n\tat com.databricks.sql.managedcatalog.ManagedCatalogSessionCatalog.doListTables(ManagedCatalogSessionCatalog.scala:790)\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalog.listTables(SessionCatalog.scala:262)\n\tat org.apache.spark.sql.execution.command.ShowTablesCommand.$anonfun$run$45(tables.scala:924)\n\tat scala.Option.map(Option.scala:230)\n\tat org.apache.spark.sql.execution.command.ShowTablesCommand.run(tables.scala:924)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)\n\tat org.apache.spark.sql.Dataset.$anonfun$logicalPlan$1(Dataset.scala:233)\n\tat org.apache.spark.sql.Dataset.$anonfun$withAction$1(Dataset.scala:3815)\n\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$5(SQLExecution.scala:126)\n\tat org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:269)\n\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$1(SQLExecution.scala:104)\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:852)\n\tat org.apache.spark.sql.execution.SQLExecution$.withCustomExecutionEnv(SQLExecution.scala:77)\n\tat org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:219)\n\tat org.apache.spark.sql.Dataset.withAction(Dataset.scala:3813)\n\tat org.apache.spark.sql.Dataset.<init>(Dataset.scala:233)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$2(SparkExecuteStatementOperation.scala:791)\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:852)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$1(SparkExecuteStatementOperation.scala:773)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.getOrCreateDF(SparkExecuteStatementOperation.scala:762)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.compileQuery(SparkExecuteStatementOperation.scala:773)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:827)\n\t... 16 more\n (80) (SQLExecDirectW)")
+2021-10-13 16:18:51.911499 (ThreadPoolExecutor-1_0): On list_None_robertodelta_dbt_test__audit: ROLLBACK
+2021-10-13 16:18:51.911574 (ThreadPoolExecutor-1_0): NotImplemented: rollback
+2021-10-13 16:18:51.911641 (ThreadPoolExecutor-1_0): On list_None_robertodelta_dbt_test__audit: Close
+2021-10-13 16:18:51.912037 (ThreadPoolExecutor-1_0): Acquiring new spark connection "list_None_robertodelta".
+2021-10-13 16:18:52.004382 (ThreadPoolExecutor-1_0): NotImplemented: add_begin_query
+2021-10-13 16:18:52.004549 (ThreadPoolExecutor-1_0): Using spark connection "list_None_robertodelta".
+2021-10-13 16:18:52.004652 (ThreadPoolExecutor-1_0): On list_None_robertodelta: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "connection_name": "list_None_robertodelta"} */
+show table extended in robertodelta like '*'
+  
+2021-10-13 16:18:52.004756 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-10-13 16:18:54.409273 (ThreadPoolExecutor-1_0): SQL status: OK in 2.40 seconds
+2021-10-13 16:18:54.411814 (ThreadPoolExecutor-1_0): On list_None_robertodelta: ROLLBACK
+2021-10-13 16:18:54.411933 (ThreadPoolExecutor-1_0): NotImplemented: rollback
+2021-10-13 16:18:54.412031 (ThreadPoolExecutor-1_0): On list_None_robertodelta: Close
+2021-10-13 16:18:54.413468 (MainThread): NotImplemented: add_begin_query
+2021-10-13 16:18:54.413593 (MainThread): NotImplemented: commit
+2021-10-13 16:18:54.413887 (MainThread): 09:18:54 | Concurrency: 1 threads (target='dev')
+2021-10-13 16:18:54.414044 (MainThread): 09:18:54 | 
+2021-10-13 16:18:54.415692 (Thread-1): Began running node snapshot.my_new_project.orders_snapshot
+2021-10-13 16:18:54.415943 (Thread-1): 09:18:54 | 1 of 1 START snapshot robertodelta.orders_snapshot................... [RUN]
+2021-10-13 16:18:54.416211 (Thread-1): Acquiring new spark connection "snapshot.my_new_project.orders_snapshot".
+2021-10-13 16:18:54.537064 (Thread-1): Compiling snapshot.my_new_project.orders_snapshot
+2021-10-13 16:18:54.540253 (Thread-1): finished collecting timing info
+2021-10-13 16:18:54.566882 (Thread-1): finished collecting timing info
+2021-10-13 16:18:54.567157 (Thread-1): Compilation Error in snapshot orders_snapshot (snapshots/orders.sql)
+  Invalid file format: parquet
+        Snapshot functionality requires file_format be set to 'delta'
+  
+  > in macro materialization_snapshot_spark (macros/materializations/snapshot.sql)
+  > called by snapshot orders_snapshot (snapshots/orders.sql)
+Traceback (most recent call last):
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 348, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 291, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 393, in run
+    return self.execute(compiled_node, manifest)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/task/run.py", line 249, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 64, in macro
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/exceptions.py", line 1017, in inner
+    raise exc
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/exceptions.py", line 1014, in inner
+    return func(*args, **kwargs)
+  File "/Users/roberto.salcido/opt/anaconda3/lib/python3.8/site-packages/dbt/exceptions.py", line 444, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in snapshot orders_snapshot (snapshots/orders.sql)
+  Invalid file format: parquet
+        Snapshot functionality requires file_format be set to 'delta'
+  
+  > in macro materialization_snapshot_spark (macros/materializations/snapshot.sql)
+  > called by snapshot orders_snapshot (snapshots/orders.sql)
+2021-10-13 16:18:54.573470 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b9922a58-1767-4b53-8ada-104e2e608aca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83a6e380d0>]}
+2021-10-13 16:18:54.573811 (Thread-1): 09:18:54 | 1 of 1 ERROR snapshotting robertodelta.orders_snapshot............... [ERROR in 0.16s]
+2021-10-13 16:18:54.573937 (Thread-1): Finished running node snapshot.my_new_project.orders_snapshot
+2021-10-13 16:18:54.574804 (MainThread): Acquiring new spark connection "master".
+2021-10-13 16:18:54.574918 (MainThread): On master: ROLLBACK
+2021-10-13 16:18:54.574994 (MainThread): Opening a new connection, currently in state init
+2021-10-13 16:18:54.734227 (MainThread): NotImplemented: rollback
+2021-10-13 16:18:54.734471 (MainThread): NotImplemented: add_begin_query
+2021-10-13 16:18:54.734598 (MainThread): NotImplemented: commit
+2021-10-13 16:18:54.734740 (MainThread): On master: ROLLBACK
+2021-10-13 16:18:54.734852 (MainThread): NotImplemented: rollback
+2021-10-13 16:18:54.734960 (MainThread): On master: Close
+2021-10-13 16:18:54.735354 (MainThread): 09:18:54 | 
+2021-10-13 16:18:54.735536 (MainThread): 09:18:54 | Finished running 1 snapshot in 3.82s.
+2021-10-13 16:18:54.735696 (MainThread): Connection 'master' was properly closed.
+2021-10-13 16:18:54.735813 (MainThread): Connection 'snapshot.my_new_project.orders_snapshot' was properly closed.
+2021-10-13 16:18:54.815094 (MainThread): 
+2021-10-13 16:18:54.815255 (MainThread): Completed with 1 error and 0 warnings:
+2021-10-13 16:18:54.815369 (MainThread): 
+2021-10-13 16:18:54.815476 (MainThread): Compilation Error in snapshot orders_snapshot (snapshots/orders.sql)
+2021-10-13 16:18:54.815575 (MainThread):   Invalid file format: parquet
+2021-10-13 16:18:54.815663 (MainThread):         Snapshot functionality requires file_format be set to 'delta'
+2021-10-13 16:18:54.815749 (MainThread):   
+2021-10-13 16:18:54.815834 (MainThread):   > in macro materialization_snapshot_spark (macros/materializations/snapshot.sql)
+2021-10-13 16:18:54.815917 (MainThread):   > called by snapshot orders_snapshot (snapshots/orders.sql)
+2021-10-13 16:18:54.816006 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+2021-10-13 16:18:54.816163 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83a6dd89a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83a6c69d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83a6e39e50>]}
+2021-10-13 16:18:54.816350 (MainThread): Flushing usage events
+2021-10-13 16:21:40.188151 (MainThread): Running with dbt=0.20.1
+2021-10-13 16:21:40.203667 (MainThread): the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+2021-10-13 16:21:40.208646 (MainThread): ipaddress module is available
+2021-10-13 16:21:40.208690 (MainThread): ssl.match_hostname is available
+2021-10-13 16:21:40.263894 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.snapshot.SnapshotTask'>, debug=False, defer=None, exclude=None, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/roberto.salcido/.dbt', project_dir=None, record_timing_info=None, rpc_method='snapshot', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', warn_error=False, which='snapshot', write_json=True)
+2021-10-13 16:21:40.264765 (MainThread): Tracking: tracking
+2021-10-13 16:21:40.275013 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe0c7799e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe0c7997a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe0c79a7160>]}
+2021-10-13 16:21:40.285678 (MainThread): Partial parsing not enabled
+2021-10-13 16:21:40.295345 (MainThread): Parsing macros/adapters.sql
+2021-10-13 16:21:40.321989 (MainThread): Parsing macros/materializations/seed.sql
+2021-10-13 16:21:40.334126 (MainThread): Parsing macros/materializations/view.sql
+2021-10-13 16:21:40.334576 (MainThread): Parsing macros/materializations/table.sql
+2021-10-13 16:21:40.337143 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-10-13 16:21:40.360048 (MainThread): Parsing macros/materializations/incremental/validate.sql
+2021-10-13 16:21:40.364634 (MainThread): Parsing macros/materializations/incremental/strategies.sql
+2021-10-13 16:21:40.370506 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-13 16:21:40.374961 (MainThread): Parsing macros/core.sql
+2021-10-13 16:21:40.378105 (MainThread): Parsing macros/materializations/test.sql
+2021-10-13 16:21:40.383905 (MainThread): Parsing macros/materializations/helpers.sql
+2021-10-13 16:21:40.392806 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-10-13 16:21:40.394184 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-10-13 16:21:40.409253 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-10-13 16:21:40.438194 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-10-13 16:21:40.456174 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-10-13 16:21:40.457592 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-13 16:21:40.464007 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-10-13 16:21:40.476140 (MainThread): Parsing macros/materializations/table/table.sql
+2021-10-13 16:21:40.482226 (MainThread): Parsing macros/materializations/view/view.sql
+2021-10-13 16:21:40.487351 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-10-13 16:21:40.491381 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-10-13 16:21:40.492067 (MainThread): Parsing macros/etc/query.sql
+2021-10-13 16:21:40.493108 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-10-13 16:21:40.494354 (MainThread): Parsing macros/etc/datetime.sql
+2021-10-13 16:21:40.501560 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-10-13 16:21:40.503086 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-10-13 16:21:40.504339 (MainThread): Parsing macros/adapters/common.sql
+2021-10-13 16:21:40.545252 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-10-13 16:21:40.546646 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-10-13 16:21:40.547572 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-10-13 16:21:40.548628 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-10-13 16:21:40.713008 (MainThread): Acquiring new spark connection "model.my_new_project.my_first_dbt_model".
+2021-10-13 16:21:40.720626 (MainThread): Acquiring new spark connection "model.my_new_project.my_second_dbt_model".
+2021-10-13 16:21:40.723018 (MainThread): Acquiring new spark connection "model.my_new_project.orders".
+2021-10-13 16:21:40.732451 (MainThread): Acquiring new spark connection "snapshot.my_new_project.orders_snapshot".
+2021-10-13 16:21:40.770324 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- seeds
+
+2021-10-13 16:21:40.774557 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '14d7201c-a3d1-4486-9f94-707129da5d72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe0c7c3b6a0>]}
+2021-10-13 16:21:40.778199 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '14d7201c-a3d1-4486-9f94-707129da5d72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe0c7982d90>]}
+2021-10-13 16:21:40.778364 (MainThread): Found 3 models, 4 tests, 1 snapshot, 0 analyses, 169 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-10-13 16:21:40.779014 (MainThread): 
+2021-10-13 16:21:40.779217 (MainThread): Acquiring new spark connection "master".
+2021-10-13 16:21:40.779741 (ThreadPoolExecutor-0_0): Acquiring new spark connection "list_schemas".
+2021-10-13 16:21:40.786320 (ThreadPoolExecutor-0_0): Using spark connection "list_schemas".
+2021-10-13 16:21:40.786400 (ThreadPoolExecutor-0_0): On list_schemas: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "connection_name": "list_schemas"} */
+
+    show databases
+  
+2021-10-13 16:21:40.786466 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-10-13 16:21:41.479050 (ThreadPoolExecutor-0_0): SQL status: OK in 0.69 seconds
+2021-10-13 16:21:41.486889 (ThreadPoolExecutor-0_0): On list_schemas: Close
+2021-10-13 16:21:41.488378 (ThreadPoolExecutor-1_0): Acquiring new spark connection "list_None_robertodelta".
+2021-10-13 16:21:41.565083 (ThreadPoolExecutor-1_0): NotImplemented: add_begin_query
+2021-10-13 16:21:41.565226 (ThreadPoolExecutor-1_0): Using spark connection "list_None_robertodelta".
+2021-10-13 16:21:41.565314 (ThreadPoolExecutor-1_0): On list_None_robertodelta: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "connection_name": "list_None_robertodelta"} */
+show table extended in robertodelta like '*'
+  
+2021-10-13 16:21:41.565404 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-10-13 16:21:43.856241 (ThreadPoolExecutor-1_0): SQL status: OK in 2.29 seconds
+2021-10-13 16:21:43.858767 (ThreadPoolExecutor-1_0): On list_None_robertodelta: ROLLBACK
+2021-10-13 16:21:43.858885 (ThreadPoolExecutor-1_0): NotImplemented: rollback
+2021-10-13 16:21:43.858981 (ThreadPoolExecutor-1_0): On list_None_robertodelta: Close
+2021-10-13 16:21:43.859542 (ThreadPoolExecutor-1_0): Acquiring new spark connection "list_None_robertodelta_dbt_test__audit".
+2021-10-13 16:21:43.951312 (ThreadPoolExecutor-1_0): NotImplemented: add_begin_query
+2021-10-13 16:21:43.951477 (ThreadPoolExecutor-1_0): Using spark connection "list_None_robertodelta_dbt_test__audit".
+2021-10-13 16:21:43.951578 (ThreadPoolExecutor-1_0): On list_None_robertodelta_dbt_test__audit: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "connection_name": "list_None_robertodelta_dbt_test__audit"} */
+show table extended in robertodelta_dbt_test__audit like '*'
+  
+2021-10-13 16:21:43.951680 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-10-13 16:21:44.253990 (ThreadPoolExecutor-1_0): Error while running:
+/* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "connection_name": "list_None_robertodelta_dbt_test__audit"} */
+show table extended in robertodelta_dbt_test__audit like '*'
+  
+2021-10-13 16:21:44.254145 (ThreadPoolExecutor-1_0): ('42000', "[42000] [Simba][Hardy] (80) Syntax or semantic analysis error thrown in server while executing query. Error message from server: org.apache.hive.service.cli.HiveSQLException: Error running query: org.apache.spark.sql.catalyst.analysis.NoSuchDatabaseException: Database 'robertodelta_dbt_test__audit' not found\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:948)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:692)\n\tat scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)\n\tat org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:112)\n\tat org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:47)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:53)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:692)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:687)\n\tat java.security.AccessController.doPrivileged(Native Method)\n\tat javax.security.auth.Subject.doAs(Subject.java:422)\n\tat org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1746)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:703)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\nCaused by: org.apache.spark.sql.catalyst.analysis.NoSuchDatabaseException: Database 'robertodelta_dbt_test__audit' not found\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalogImpl.requireDbExists(SessionCatalog.scala:546)\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalogImpl.doListTables(SessionCatalog.scala:1379)\n\tat com.databricks.sql.managedcatalog.ManagedCatalogSessionCatalog.doListTables(ManagedCatalogSessionCatalog.scala:790)\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalog.listTables(SessionCatalog.scala:262)\n\tat org.apache.spark.sql.execution.command.ShowTablesCommand.$anonfun$run$45(tables.scala:924)\n\tat scala.Option.map(Option.scala:230)\n\tat org.apache.spark.sql.execution.command.ShowTablesCommand.run(tables.scala:924)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)\n\tat org.apache.spark.sql.Dataset.$anonfun$logicalPlan$1(Dataset.scala:233)\n\tat org.apache.spark.sql.Dataset.$anonfun$withAction$1(Dataset.scala:3815)\n\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$5(SQLExecution.scala:126)\n\tat org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:269)\n\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$1(SQLExecution.scala:104)\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:852)\n\tat org.apache.spark.sql.execution.SQLExecution$.withCustomExecutionEnv(SQLExecution.scala:77)\n\tat org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:219)\n\tat org.apache.spark.sql.Dataset.withAction(Dataset.scala:3813)\n\tat org.apache.spark.sql.Dataset.<init>(Dataset.scala:233)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$2(SparkExecuteStatementOperation.scala:791)\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:852)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$1(SparkExecuteStatementOperation.scala:773)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.getOrCreateDF(SparkExecuteStatementOperation.scala:762)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.compileQuery(SparkExecuteStatementOperation.scala:773)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:827)\n\t... 16 more\n (80) (SQLExecDirectW)")
+2021-10-13 16:21:44.254331 (ThreadPoolExecutor-1_0): Error while running:
+macro list_relations_without_caching
+2021-10-13 16:21:44.254401 (ThreadPoolExecutor-1_0): Runtime Error
+  ('42000', "[42000] [Simba][Hardy] (80) Syntax or semantic analysis error thrown in server while executing query. Error message from server: org.apache.hive.service.cli.HiveSQLException: Error running query: org.apache.spark.sql.catalyst.analysis.NoSuchDatabaseException: Database 'robertodelta_dbt_test__audit' not found\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:948)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:692)\n\tat scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)\n\tat org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:112)\n\tat org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:47)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:53)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:692)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:687)\n\tat java.security.AccessController.doPrivileged(Native Method)\n\tat javax.security.auth.Subject.doAs(Subject.java:422)\n\tat org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1746)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:703)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\nCaused by: org.apache.spark.sql.catalyst.analysis.NoSuchDatabaseException: Database 'robertodelta_dbt_test__audit' not found\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalogImpl.requireDbExists(SessionCatalog.scala:546)\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalogImpl.doListTables(SessionCatalog.scala:1379)\n\tat com.databricks.sql.managedcatalog.ManagedCatalogSessionCatalog.doListTables(ManagedCatalogSessionCatalog.scala:790)\n\tat org.apache.spark.sql.catalyst.catalog.SessionCatalog.listTables(SessionCatalog.scala:262)\n\tat org.apache.spark.sql.execution.command.ShowTablesCommand.$anonfun$run$45(tables.scala:924)\n\tat scala.Option.map(Option.scala:230)\n\tat org.apache.spark.sql.execution.command.ShowTablesCommand.run(tables.scala:924)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)\n\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)\n\tat org.apache.spark.sql.Dataset.$anonfun$logicalPlan$1(Dataset.scala:233)\n\tat org.apache.spark.sql.Dataset.$anonfun$withAction$1(Dataset.scala:3815)\n\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$5(SQLExecution.scala:126)\n\tat org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:269)\n\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withCustomExecutionEnv$1(SQLExecution.scala:104)\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:852)\n\tat org.apache.spark.sql.execution.SQLExecution$.withCustomExecutionEnv(SQLExecution.scala:77)\n\tat org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:219)\n\tat org.apache.spark.sql.Dataset.withAction(Dataset.scala:3813)\n\tat org.apache.spark.sql.Dataset.<init>(Dataset.scala:233)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$2(SparkExecuteStatementOperation.scala:791)\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:852)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$compileQuery$1(SparkExecuteStatementOperation.scala:773)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.getOrCreateDF(SparkExecuteStatementOperation.scala:762)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.compileQuery(SparkExecuteStatementOperation.scala:773)\n\tat org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:827)\n\t... 16 more\n (80) (SQLExecDirectW)")
+2021-10-13 16:21:44.254569 (ThreadPoolExecutor-1_0): On list_None_robertodelta_dbt_test__audit: ROLLBACK
+2021-10-13 16:21:44.254640 (ThreadPoolExecutor-1_0): NotImplemented: rollback
+2021-10-13 16:21:44.254703 (ThreadPoolExecutor-1_0): On list_None_robertodelta_dbt_test__audit: Close
+2021-10-13 16:21:44.255119 (MainThread): NotImplemented: add_begin_query
+2021-10-13 16:21:44.255212 (MainThread): NotImplemented: commit
+2021-10-13 16:21:44.255429 (MainThread): 09:21:44 | Concurrency: 1 threads (target='dev')
+2021-10-13 16:21:44.255545 (MainThread): 09:21:44 | 
+2021-10-13 16:21:44.256956 (Thread-1): Began running node snapshot.my_new_project.orders_snapshot
+2021-10-13 16:21:44.257184 (Thread-1): 09:21:44 | 1 of 1 START snapshot robertodelta.orders_snapshot................... [RUN]
+2021-10-13 16:21:44.257419 (Thread-1): Acquiring new spark connection "snapshot.my_new_project.orders_snapshot".
+2021-10-13 16:21:44.348505 (Thread-1): Compiling snapshot.my_new_project.orders_snapshot
+2021-10-13 16:21:44.351789 (Thread-1): finished collecting timing info
+2021-10-13 16:21:44.378489 (Thread-1): Using spark connection "snapshot.my_new_project.orders_snapshot".
+2021-10-13 16:21:44.378611 (Thread-1): On snapshot.my_new_project.orders_snapshot: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "node_id": "snapshot.my_new_project.orders_snapshot"} */
+
+    show databases
+  
+2021-10-13 16:21:44.378696 (Thread-1): Opening a new connection, currently in state closed
+2021-10-13 16:21:44.837389 (Thread-1): SQL status: OK in 0.46 seconds
+2021-10-13 16:21:44.884799 (Thread-1): Writing runtime SQL for node "snapshot.my_new_project.orders_snapshot"
+2021-10-13 16:21:44.885333 (Thread-1): NotImplemented: add_begin_query
+2021-10-13 16:21:44.885471 (Thread-1): Using spark connection "snapshot.my_new_project.orders_snapshot".
+2021-10-13 16:21:44.885547 (Thread-1): On snapshot.my_new_project.orders_snapshot: /* {"app": "dbt", "dbt_version": "0.20.1", "profile_name": "sql_endpoints", "target_name": "dev", "node_id": "snapshot.my_new_project.orders_snapshot"} */
+
+      
+      create or replace table robertodelta.orders_snapshot
+    
+    
+    using delta
+    
+    
+    
+    
+    
+    as
+      
+
+    select *,
+        md5(coalesce(cast(id as string ), '')
+         || '|' || coalesce(cast(updated_at as string ), '')
+        ) as dbt_scd_id,
+        updated_at as dbt_updated_at,
+        updated_at as dbt_valid_from,
+        nullif(updated_at, updated_at) as dbt_valid_to
+    from (
+        
+
+
+
+select * from robertodelta.orders
+
+    ) sbq
+
+
+  
+2021-10-13 16:21:51.464884 (Thread-1): SQL status: OK in 6.58 seconds
+2021-10-13 16:21:51.471883 (Thread-1): NotImplemented: commit
+2021-10-13 16:21:51.472279 (Thread-1): finished collecting timing info
+2021-10-13 16:21:51.472414 (Thread-1): On snapshot.my_new_project.orders_snapshot: ROLLBACK
+2021-10-13 16:21:51.472501 (Thread-1): NotImplemented: rollback
+2021-10-13 16:21:51.472576 (Thread-1): On snapshot.my_new_project.orders_snapshot: Close
+2021-10-13 16:21:51.525583 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '14d7201c-a3d1-4486-9f94-707129da5d72', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe0c7ca5040>]}
+2021-10-13 16:21:51.526163 (Thread-1): 09:21:51 | 1 of 1 OK snapshotted robertodelta.orders_snapshot................... [OK in 7.27s]
+2021-10-13 16:21:51.526374 (Thread-1): Finished running node snapshot.my_new_project.orders_snapshot
+2021-10-13 16:21:51.527674 (MainThread): Acquiring new spark connection "master".
+2021-10-13 16:21:51.527830 (MainThread): On master: ROLLBACK
+2021-10-13 16:21:51.527937 (MainThread): Opening a new connection, currently in state init
+2021-10-13 16:21:51.680333 (MainThread): NotImplemented: rollback
+2021-10-13 16:21:51.680572 (MainThread): NotImplemented: add_begin_query
+2021-10-13 16:21:51.680697 (MainThread): NotImplemented: commit
+2021-10-13 16:21:51.680839 (MainThread): On master: ROLLBACK
+2021-10-13 16:21:51.680950 (MainThread): NotImplemented: rollback
+2021-10-13 16:21:51.681057 (MainThread): On master: Close
+2021-10-13 16:21:51.681435 (MainThread): 09:21:51 | 
+2021-10-13 16:21:51.681618 (MainThread): 09:21:51 | Finished running 1 snapshot in 10.90s.
+2021-10-13 16:21:51.681770 (MainThread): Connection 'master' was properly closed.
+2021-10-13 16:21:51.681881 (MainThread): Connection 'snapshot.my_new_project.orders_snapshot' was properly closed.
+2021-10-13 16:21:51.829646 (MainThread): 
+2021-10-13 16:21:51.829809 (MainThread): Completed successfully
+2021-10-13 16:21:51.829928 (MainThread): 
+Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+2021-10-13 16:21:51.830097 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe0c7799e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe0c79a92e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe0c7982c40>]}
+2021-10-13 16:21:51.830289 (MainThread): Flushing usage events
